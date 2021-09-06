@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Patrick Hand";
+  src: url("font/PatrickHand-Regular.ttf") format("truetype");
+}
+body {
+	background: #fff6e6;
+	font-family: 'Patrick Hand', sans-serif;
+	color: #d8762c;
+	font-size: 17px;
+}
+button {
+	font-family: 'Patrick Hand', sans-serif;
+}
+code {
+	font-family: monospace;
+	font-size: 13px;
+	background: peachpuff;
+	padding: 0 7px;
+	margin: 0 7px;
+	/*color: #fff;*/
+}
+label {
+	min-width: 120px;
+	display: inline-block;
+}
+h1, h2 {
+	text-align: center;
+	margin: 0;
+	line-height: 1;
+}
+.subtitle, .tags {
+	text-align: center;
+	color: #d8762c;
+}
+.tags span {
+	display: inline-block;
+	padding: 3px 15px;
+	background: #d8762c;
+	color: white;
+	border-radius: 35px;
+	margin: 0 5px;
+	font-size: 14px;
+}
+.display {
+	display: flex;
+    flex-wrap:  wrap;
+    justify-content: center;
+	max-width: 100%;
+	width: 100%;
+	margin: 30px auto;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.box-container {
+	width: 400px;
+	max-width: 90vw;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.box-container-100 {
+	width: 800px;
+	max-width: 90vw;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.codeblock {
+	background: #fdf9f5;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 230px;
+}
+
+ /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+}
+
+ /*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+}
+
+ /*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+
+}
+
+ /*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+}
