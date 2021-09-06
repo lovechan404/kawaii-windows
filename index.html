@@ -93,8 +93,8 @@
 		<h2>Tutorial</h2>
 	<div class="display">
 		<div class="box-container-100">
-			<h3>Step 1. The HTML structure.</h3>
-				No buttons:
+			<h3>HTML Structure</h3>
+				This is the basic structure without buttons:
 					<script src="https://gist.github.com/lovechan404/8fde481cd148a85f5b54c33441b6d17d.js"></script>
 				Result:
 					<div class="kawaii-window kawaii-a">
@@ -103,9 +103,11 @@
 					   <h3>Hello!</h3> 
 						Let's have fun!
 					</div>
-					<br><br>
-				Insert <code>&lt;div class="btns"&gt; &lt;span&gt; - &lt;/span&gt; &lt;span&gt; X &lt;/span&gt; &lt;/div&gt;</code> 
-				to show <code>-</code> and <code>X</code>:
+			<h3>Heading</h3>
+				Insert <code>&lt;span&gt;</code> items inside the <code>&lt;div class="btns"&gt;</code> buttons on the heading. 
+				Make sure <code>&lt;div class="btns"&gt;</code> is placed BEFORE the header title.
+
+				Example:
 					<script src="https://gist.github.com/lovechan404/0aaa8b09a68e3b35008d65e775b46e4f.js"></script>
 				Result:
 					<div class="kawaii-window kawaii-a">
@@ -132,12 +134,14 @@
 					   </div>
 					   <h3>Hello!</h3> 
 					   Let's have fun! 
-					   <button class="kawaii-button"> OK! </button>
+					   <div class="kawaii-button-box kb-right">
+							<button class="kawaii-button"> OK! </button>
+						</div>
 					</div>
 		</div>
 	</div>
 
-	<p class="tags"><span>Fork me on Github</span><span>Donate</span></p>
+	<p class="tags"><span>View on Github</span><span>Donate</span></p>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="script.js"></script>
