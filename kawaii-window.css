@@ -1,0 +1,95 @@
+
+.kawaii-button {
+	min-width: 100px;
+    max-width: 90%;
+    margin-top: 30px;
+    margin-left: auto;
+    display: block;
+    outline: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    transition: .1s;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+.kawaii-button:hover {
+	opacity: .9;
+}
+.kawaii-button:active {
+	transform: translateY(3px);
+}
+.kawaii-window .secondary-button {
+	border: 2px solid #ff8b65;
+	color: #ff8b65!important;
+	background: transparent!important;
+	box-sizing: border-box;
+}
+.break-btn {
+	float: right;
+}
+.kb-center {
+	margin: auto;
+	margin-top: 30px;
+	text-align: center;
+}
+.kb-right {
+	margin-left: auto;
+	margin-top: 30px;
+	text-align: center;
+}
+.kb-left {
+	margin-right: auto;
+	margin-top: 30px;
+	text-align: center;
+}
+.kawaii-button-box {
+	width: fit-content;
+	max-width: 100%;
+}
+.kawaii-button-box button{
+	display: inline-block;
+	margin: 2px;
+}
+.kawaii-header span {
+	box-sizing: border-box;
+	cursor: pointer;
+	height: 20px;
+	width: 20px;
+	padding-top: 2px;
+	padding-left: 5px;
+	display: inline-block;
+	margin-left: auto ;
+		font-weight: bold;
+}
+.kawaii-header .btns {
+	float: right;
+}
+
+/*kawaii a*/
+
+	.kawaii-a {
+		box-sizing: border-box;
+		border-radius: 5px;
+		padding: 30px;
+		background: #fdf9f5;
+		border: 5px solid #ff8b65;
+		color: #ff8b65;
+	}
+	.kawaii-a .kawaii-header{
+		margin: -31px -31px 30px -31px;
+		border-radius: 2px 2px 0 0;
+		padding: 5px;
+		background: #ff8b65;
+		border-bottom: 5px solid #ff8b65;
+		color: #fff;
+	}
+
+	.kawaii-a .kawaii-button {
+		background: #ff8b65;
+		border-radius: 4px;
+	    color: #fff;
+	}
+	
+/*end kawaii a*/

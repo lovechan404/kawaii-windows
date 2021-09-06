@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Kawaii Window </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="kawaii-window.css">
+</head>
+<body>
+	<br><br>
+	<h2>HTML + CSS</h2><h1> Kawaii Windows</h1>
+	<p class="subtitle">by lovechan404 </p>
+	<p class="tags"><span>A</span><span>B</span><span>C</span></p>
+		<div class="display">
+			<div class="box-container">
+				<div class="kawaii-window kawaii-a">
+					<div class="kawaii-header"> 
+						Kawaii Windows
+						<div class="btns">
+							<span> X </span>  
+						</div>
+					</div>
+					<h3>Kawaii A - Simple Peach</h3>
+					Font used: Patrick Hand
+					<img src="">
+					<div class="kawaii-button-box kb-right">
+					<button class="kawaii-button"> OK! </button>
+					</div>
+				</div>
+			</div>
+			<div class="box-container">
+				<div class="kawaii-window kawaii-a">
+					<div class="kawaii-header"> 
+						ERROR
+						<div class="btns">
+							<span> - </span>
+							<span> X </span>  
+						</div>
+					</div>
+					<h3>Are you sure? </h3>
+					You typed: "I am awesome."
+					<img src="">
+					<div class="kawaii-button-box kb-center">
+						<button class="kawaii-button "> NO NEED TO ASK! </button>
+						<button class="kawaii-button secondary-button"> OF COURSE I AM! </button>
+					</div>
+
+				</div>
+			</div>
+			<div class="box-container-100">
+				<div class="kawaii-window kawaii-a">
+					<div class="kawaii-header"> 
+						Registration
+						<div class="btns">
+							<span> - </span>
+							<span> X </span>  
+						</div>
+					</div>
+					<h3>SPONGEBOB CLUB REGISTRATION</h3>
+					<label> Favorite Color: </label><input type="text" name=""> &nbsp&nbsp&nbsp&nbsp&nbsp <label> Favorite Meme: </label><input type="text" name=""> <br>
+					<label> Favorite Person: </label><input type="text" name="">
+					<img src="">
+					<div class="kawaii-button-box kb-left">
+						<button class="kawaii-button "> BACK </button>
+						<button class="kawaii-button secondary-button break-btn"> NEXT </button>
+					</div>
+
+				</div>
+			</div>
+			<div class="box-container">
+				<div class="kawaii-window kawaii-a">
+					<div class="kawaii-header"> 
+						Please choose
+						<div class="btns">
+							<span> - </span>
+							<span> X </span>  
+						</div>
+					</div>
+					Who's the best boi?
+					<img src="">
+					<div class="kawaii-button-box kb-center">
+						<button class="kawaii-button "> COWBOI </button>
+						<button class="kawaii-button "> COOL BOI </button>
+						<button class="kawaii-button "> BONK BOI </button>
+						<button class="kawaii-button "> GOOD BOI </button>
+						<button class="kawaii-button "> ALL OF THE BOIS ABOVE :> </button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<h2>Tutorial</h2>
+	<div class="display">
+		<div class="box-container-100">
+			<h3>Step 1. The HTML structure.</h3>
+				No buttons:
+					<script src="https://gist.github.com/lovechan404/8fde481cd148a85f5b54c33441b6d17d.js"></script>
+				Result:
+					<div class="kawaii-window kawaii-a">
+					   <div class="kawaii-header"> Kawaii Windows 
+					   </div>
+					   <h3>Hello!</h3> 
+						Let's have fun!
+					</div>
+					<br><br>
+				Insert <code>&lt;div class="btns"&gt; &lt;span&gt; - &lt;/span&gt; &lt;span&gt; X &lt;/span&gt; &lt;/div&gt;</code> 
+				to show <code>-</code> and <code>X</code>:
+					<script src="https://gist.github.com/lovechan404/0aaa8b09a68e3b35008d65e775b46e4f.js"></script>
+				Result:
+					<div class="kawaii-window kawaii-a">
+					   <div class="kawaii-header"> Kawaii Windows <!-- site/project title -->
+					   		<div class="btns">
+							<span> - </span>
+							<span> X </span>  
+							</div>
+					   </div>
+					   <h3>Hello!</h3> <!-- message title -->
+					   Let's have fun! <!-- message -->
+					</div><br><br>
+				Right-Align button:
+					<script src="https://gist.github.com/lovechan404/3f6a9472562b5d5c107ad2a7591c531a.js"></script>
+				Result:
+					<div class="kawaii-window kawaii-a">
+					   <div class="kawaii-header"> Kawaii Windows 
+					      <!-- insert top buttons -->
+					      <div class="btns"> 
+					        <span> - </span>
+					        <span> X </span>  
+					      </div>
+					      <!-- end top buttons -->
+					   </div>
+					   <h3>Hello!</h3> 
+					   Let's have fun! 
+					   <button class="kawaii-button"> OK! </button>
+					</div>
+		</div>
+	</div>
+
+	<p class="tags"><span>Fork me on Github</span><span>Donate</span></p>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
+</html>
