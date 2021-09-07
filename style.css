@@ -3,9 +3,9 @@
   src: url("font/PatrickHand-Regular.ttf") format("truetype");
 }
 body {
-	background: #fff6e6;
+	background: #fdf9f5;
 	font-family: 'Patrick Hand', sans-serif;
-	color: #d8762c;
+	color: #ffa7a7;
 	font-size: 17px;
 }
 button {
@@ -17,29 +17,98 @@ code {
 	background: peachpuff;
 	padding: 0 7px;
 	margin: 0 7px;
-	/*color: #fff;*/
 }
 label {
 	min-width: 120px;
 	display: inline-block;
 }
-h1, h2 {
+.title h1, .title h2 {
 	text-align: center;
 	margin: 0;
 	line-height: 1;
 }
+.title h3 {
+	margin: 0 auto;
+	width: fit-content;
+	background: #ffa7a7;
+	color: white;
+	margin-top: -2px	;
+	padding: 2px 20px 10px 20px;
+	font-weight: normal;
+	border-radius: 0 0 99px 99px;
+}
+h2 {
+	text-align: center;
+}
+a {
+	font-weight: bold;
+	color: #ffa7a7;
+	text-decoration: none;
+}
+table{
+	min-width:300px;
+	max-width:100% ;
+	text-align: left;
+}
+.tbl td, th {
+	padding: 2px 5px;
+	border: 1px solid #ffa7a7;
+}
+.title {
+	    width: 400px;
+    max-width: 90vw;
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+.test > .kawaii-window {
+	  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.float-left{
+	float: left;
+}
+.glass {
+	padding-top: 40px;
+	width: 250px;
+	max-width: 50%;
+	border: 10px solid #ffa7a7;
+}
 .subtitle, .tags {
 	text-align: center;
-	color: #d8762c;
+	color: #ffa7a7;
+}
+.title .tags {
+		border: 5px solid #ffa7a7;
+}
+.tags {
+	width: 100%;
+	margin: auto;
+	padding: 5px;
+	box-sizing: border-box;
+	border-radius: 25px;
 }
 .tags span {
 	display: inline-block;
 	padding: 3px 15px;
-	background: #d8762c;
+	background: #ffa7a7;
 	color: white;
 	border-radius: 35px;
-	margin: 0 5px;
+	margin: 2px 3px;
 	font-size: 14px;
+	border:  2px solid #ffa7a7;
+	cursor: pointer;
+	transition: .2s;
+}
+.tags span.active, .tags span:hover{
+	background: transparent;
+	color:  #ffa7a7;
+	transform: scale(1.13);
+}
+.tags span:active {
+	transform: scale(1);
 }
 .display {
 	display: flex;
@@ -86,4 +155,15 @@ h1, h2 {
  /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
 
+}
+
+
+@-webkit-keyframes glow {
+  from {
+    box-shadow: 0 0 4px #fff, 0 0 7px #f6cfcf, 0 0 10px #f6cfcf, 0 0 16px #f6cfcf, 0 0 24px #f6cfcf, 0 0 31px #f6cfcf, 0 0 38px #f6cfcf;
+  }
+  
+  to {
+    box-shadow: 0 0 8px #fff, 0 0 13px #ffe7e7, 0 0 20px #ffe7e7, 0 0 25px #ffe7e7, 0 0 36px #ffe7e7, 0 0 41px #ffe7e7, 0 0 48px #ffe7e7;
+  }
 }

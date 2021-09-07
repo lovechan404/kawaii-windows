@@ -7,13 +7,21 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="kawaii-window.css">
 </head>
-<body>
-	<br><br>
-	<h2>HTML + CSS</h2><h1> Kawaii Windows</h1>
-	<p class="subtitle">by lovechan404 </p>
-	<p class="tags"><span>A</span><span>B</span><span>C</span></p>
+<body><br><br>
+				<div class="title"> 
+				<h2>HTML + CSS</h2><h1> Kawaii Windows</h1>
+				<p class="subtitle">by lovechan404 </p>
+					<p class="tags">
+						<span id="kawaii-a" class="active">A</span>
+						<span id="kawaii-b">B</span>
+						<span id="kawaii-c">C</span> 
+						<span id="kawaii-d">D</span>
+						<span id="kawaii-e">E</span>
+					</p>
+					<h3 id="window-name"> Simple </h3>
+				</div>
 		<div class="display">
-			<div class="box-container">
+			<div class="box-container test">
 				<div class="kawaii-window kawaii-a">
 					<div class="kawaii-header"> 
 						Kawaii Windows
@@ -29,7 +37,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="box-container">
+			<div class="box-container test">
 				<div class="kawaii-window kawaii-a">
 					<div class="kawaii-header"> 
 						ERROR
@@ -48,101 +56,76 @@
 
 				</div>
 			</div>
-			<div class="box-container-100">
-				<div class="kawaii-window kawaii-a">
-					<div class="kawaii-header"> 
-						Registration
-						<div class="btns">
-							<span> - </span>
-							<span> X </span>  
-						</div>
-					</div>
-					<h3>SPONGEBOB CLUB REGISTRATION</h3>
-					<label> Favorite Color: </label><input type="text" name=""> &nbsp&nbsp&nbsp&nbsp&nbsp <label> Favorite Meme: </label><input type="text" name=""> <br>
-					<label> Favorite Person: </label><input type="text" name="">
-					<img src="">
-					<div class="kawaii-button-box kb-left">
-						<button class="kawaii-button "> BACK </button>
-						<button class="kawaii-button secondary-button break-btn"> NEXT </button>
-					</div>
-
-				</div>
-			</div>
-			<div class="box-container">
-				<div class="kawaii-window kawaii-a">
-					<div class="kawaii-header"> 
-						Please choose
-						<div class="btns">
-							<span> - </span>
-							<span> X </span>  
-						</div>
-					</div>
-					Who's the best boi?
-					<img src="">
-					<div class="kawaii-button-box kb-center">
-						<button class="kawaii-button "> COWBOI </button>
-						<button class="kawaii-button "> COOL BOI </button>
-						<button class="kawaii-button "> BONK BOI </button>
-						<button class="kawaii-button "> GOOD BOI </button>
-						<button class="kawaii-button "> ALL OF THE BOIS ABOVE :> </button>
-					</div>
-
-				</div>
-			</div>
+			<div class="box-container-100"></div>
 		</div>
-		<h2>Tutorial</h2>
-	<div class="display">
-		<div class="box-container-100">
-			<h3>HTML Structure</h3>
-				This is the basic structure without buttons:
-					<script src="https://gist.github.com/lovechan404/8fde481cd148a85f5b54c33441b6d17d.js"></script>
-				Result:
-					<div class="kawaii-window kawaii-a">
-					   <div class="kawaii-header"> Kawaii Windows 
-					   </div>
-					   <h3>Hello!</h3> 
-						Let's have fun!
-					</div>
-			<h3>Heading</h3>
-				Insert <code>&lt;span&gt;</code> items inside the <code>&lt;div class="btns"&gt;</code> buttons on the heading. 
-				Make sure <code>&lt;div class="btns"&gt;</code> is placed BEFORE the header title.
+		
+		<h2>CSS</h2>
+			<div class="display">
+				<div class="box-container-100">
+					Download or copy the full css code <a href="https://raw.githubusercontent.com/lovechan404/kawaii-windows/8423a0f928b08570b5ec647dee4662312aff9343/kawaii-window.css" target="blank"> here</a> . <br> 
+					Note: Though you can link the url as source, I HIGHLY recommend that you have your own saved copy, in case something goes wrong with this link. 
+				</div>
+			</div>
 
-				Example:
-					<script src="https://gist.github.com/lovechan404/0aaa8b09a68e3b35008d65e775b46e4f.js"></script>
-				Result:
-					<div class="kawaii-window kawaii-a">
-					   <div class="kawaii-header"> Kawaii Windows <!-- site/project title -->
-					   		<div class="btns">
-							<span> - </span>
-							<span> X </span>  
+		<h2>HTML</h2>
+			<div class="display">
+				<div class="box-container-100">
+					<h3>1. HTML Structure</h3>
+						This is the basic structure without buttons:
+							<!-- <script src="https://gist.github.com/lovechan404/8fde481cd148a85f5b54c33441b6d17d.js"></script> -->
+						Result:
+							<div class="kawaii-window kawaii-a">
+							   <div class="kawaii-header"> Kawaii Windows 
+							   </div>
+							   <h3>Hello!</h3> 
+								Let's have fun!
 							</div>
-					   </div>
-					   <h3>Hello!</h3> <!-- message title -->
-					   Let's have fun! <!-- message -->
-					</div><br><br>
-				Right-Align button:
-					<script src="https://gist.github.com/lovechan404/3f6a9472562b5d5c107ad2a7591c531a.js"></script>
-				Result:
-					<div class="kawaii-window kawaii-a">
-					   <div class="kawaii-header"> Kawaii Windows 
-					      <!-- insert top buttons -->
-					      <div class="btns"> 
-					        <span> - </span>
-					        <span> X </span>  
-					      </div>
-					      <!-- end top buttons -->
-					   </div>
-					   <h3>Hello!</h3> 
-					   Let's have fun! 
-					   <div class="kawaii-button-box kb-right">
-							<button class="kawaii-button"> OK! </button>
-						</div>
-					</div>
-		</div>
-	</div>
+					<h3>2. Heading</h3>
+						Insert <code>&lt;span&gt;</code> items inside the <code>&lt;div class="btns"&gt;</code> buttons on the heading. 
+						Make sure <code>&lt;div class="btns"&gt;</code> is placed BEFORE your window title.
+
+						Example:
+							<!-- <script src="https://gist.github.com/lovechan404/0aaa8b09a68e3b35008d65e775b46e4f.js"></script> -->
+						Result:
+							<div class="kawaii-window kawaii-a">
+							   <div class="kawaii-header"> Kawaii Windows <!-- site/project title -->
+							   		<div class="btns">
+									<span> - </span>
+									<span> X </span>  
+									</div>
+							   </div>
+							   <h3>Hello!</h3> <!-- message title -->
+							   Let's have fun! <!-- message -->
+							</div>
+
+					<h3>3. More Buttons </h3>
+						Align buttons by using kb-{position}. You can add buttons as many as needed. <br>
+						<table class="tbl"><thead><tr><th>Container class</th><th>Position</th></tr></thead><tbody><tr><td>kb-right</td><td>right</td></tr><tr><td>kb-left</td><td>left</td></tr><tr><td>kb-center</td><td>center</td></tr></tbody></table>
+
+
+						Example: 
+							<!-- <script src="https://gist.github.com/lovechan404/3f6a9472562b5d5c107ad2a7591c531a.js"></script> -->
+						Result:
+							<div class="kawaii-window kawaii-a">
+							   <div class="kawaii-header"> Kawaii Windows 
+							      <!-- insert top buttons -->
+							      <div class="btns"> 
+							        <span> - </span>
+							        <span> X </span>  
+							      </div>
+							      <!-- end top buttons -->
+							   </div>
+							   <h3>Hello!</h3> 
+							   Let's have fun! 
+							   <div class="kawaii-button-box kb-right">
+									<button class="kawaii-button"> OK! </button>
+								</div>
+							</div><br><br>
+				</div>
+			</div>
 
 	<p class="tags"><span>View on Github</span><span>Donate</span></p>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="jquery-3.6.0.js"></script>
 <script type="text/javascript" src="script.js"></script>
 </html>
