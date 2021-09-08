@@ -4,63 +4,64 @@
 	<meta charset="utf-8">
 	<title> Kawaii Window </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/92a6ff382c.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="kawaii-window.css">
 </head>
-<body><br><br>
-				<div class="title"> 
-				<h2>HTML + CSS</h2><h1> Kawaii Windows</h1>
-				<p class="subtitle">by lovechan404 </p>
-					<p class="tags">
-						<span id="kawaii-a" class="active">A</span>
-						<span id="kawaii-b">B</span>
-						<span id="kawaii-c">C</span> 
-						<span id="kawaii-d">D</span>
-						<span id="kawaii-e">E</span>
-						<span id="lights" class="clicked"> Toggle Lights </span>
-					</p>
-					<h3 id="window-name"> Simple </h3>
-				</div>
+<body>
 		<div class="display">
-			<div class="box-container test lights-on">
+			<div class="box-container d-sample">
+				
+						<div class="title"> 
+							<h2>HTML + CSS</h2><h1> Kawaii Windows</h1>
+							<p class="subtitle">by lovechan404 </p><br>
+						</div>
+				<div class="test lights-on">
+
 				<div class="kawaii-window kawaii-a">
 					<div class="kawaii-header"> 
-						Kawaii Windows
-						<div class="btns">
-							<span> X </span>  
-						</div>
+						<span id="window-title"> Kawaii Windows </span>
+						<div class="btns"> <span> X </span> </div>
 					</div>
 					<div class="message">
-						<h3>Kawaii A - Simple Peach</h3>
-						Font used: Patrick Hand
-						<img src="">
+						<h3 id="heading"></h3>
+						<p class="message-content">
+							Welcome, master!
+						</p>
 						<div class="kawaii-button-box kb-right">
-							<button class="kawaii-button"> OK! </button>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="box-container test lights-on">
-				<div class="kawaii-window kawaii-a">
-					<div class="kawaii-header"> 
-						ERROR
-						<div class="btns">
-							<span> - </span>
-							<span> X </span>  
+				</div>
+			</div> 
+			<div class="w-100"></div>
+			<div class="box-container">
+				<div class="title">
+					<div class="tags">
+						<div>
+							<span id="kawaii-a" class="active">A</span>
+							<span id="kawaii-b">B</span>
+							<span id="kawaii-c">C</span> 
+							<span id="kawaii-d">D</span>
+							<span id="kawaii-e">E</span>
 						</div>
-					</div>
-					<div class="message">
-						<h3>Are you sure? </h3>
-						You typed: "I am awesome."
-						<img src="">
-						<div class="kawaii-button-box kb-center">
-							<button class="kawaii-button "> NO NEED TO ASK! </button>
-							<button class="kawaii-button secondary-button"> OF COURSE I AM! </button>
+						<span id="lights" class="clicked"> <i class="fas fa-lightbulb"></i> </span>
+						<br><br> Window Title <br>
+							<input type="text" name="" value="Kawaii Windows" id="window-input">
+						<br><br> Message Title <br>
+							<input type="text" name="" value="" id="heading-input">
+						<br><br> Message: <br>
+							<textarea id="msg-input">Welcome, master!</textarea>
+						<br><br>
+						<div class="control-group">
+						    <form id="inputs">
+						    </form>
+						   <span id="addNewButton" >Add Button</span>
+						 </div>
 						</div>
-					</div>
 				</div>
 			</div>
-			<div class="box-container-100"></div>
+			
 		</div>
 		
 		<h2>CSS</h2>

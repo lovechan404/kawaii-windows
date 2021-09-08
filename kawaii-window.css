@@ -29,17 +29,14 @@
 }
 .kb-center {
 	margin: auto;
-	margin-top: 30px;
 	text-align: center;
 }
 .kb-right {
 	margin-left: auto;
-	margin-top: 30px;
 	text-align: center;
 }
 .kb-left {
 	margin-right: auto;
-	margin-top: 30px;
 	text-align: center;
 }
 .kawaii-button-box {
@@ -50,7 +47,7 @@
 	display: inline-block;
 	margin: 2px;
 }
-.kawaii-header span {
+.btns span {
 	box-sizing: border-box;
 	cursor: pointer;
 	height: 20px;
@@ -76,9 +73,9 @@
 		color: #ffa7a7;
 	}
 	.kawaii-a .kawaii-header{
-		margin: -31px -31px 30px -31px;
-		border-radius: 2px 2px 0 0;
-		padding: 5px;
+		margin: -32px -32px 30px -32px;
+		border-radius:  0;
+		padding: 0 5px;
 		background: #ffa7a7;
 		border-bottom: 5px solid #ffa7a7;
 		color: #fff;

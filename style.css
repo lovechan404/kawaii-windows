@@ -7,9 +7,14 @@ body {
 	font-family: 'Patrick Hand', sans-serif;
 	color: #ffa7a7;
 	font-size: 17px;
+	padding: 0;
+	margin: 0;
 }
 button {
 	font-family: 'Patrick Hand', sans-serif;
+}
+ input, textarea  {
+	font-family: 'Arial', sans-serif;
 }
 code {
 	font-family: monospace;
@@ -27,15 +32,16 @@ label {
 	margin: 0;
 	line-height: 1;
 }
-.title h3 {
+.w-100 {
+	width: 100%;
+}
+#window-name {
 	margin: 0 auto;
 	width: fit-content;
-	background: #ffa7a7;
+	background: transparent;
 	color: white;
-	margin-top: -2px	;
-	padding: 2px 20px 10px 20px;
 	font-weight: normal;
-	border-radius: 0 0 99px 99px;
+	color: #ffa7a7;
 }
 h2 {
 	text-align: center;
@@ -54,13 +60,7 @@ table{
 	padding: 2px 5px;
 	border: 1px solid #ffa7a7;
 }
-.title {
-	    width: 400px;
-    max-width: 90vw;
-    margin: auto;
-    padding: 15px;
-    box-sizing: border-box;
-}
+
 
 
 .test.lights-on {
@@ -86,9 +86,11 @@ table{
 .title .tags {
 		border: 5px solid #ffa7a7;
 }
+.tags > div {
+	/*display: inline-block;*/
+}
 .tags {
 	width: 100%;
-	margin: auto;
 	padding: 5px;
 	box-sizing: border-box;
 	border-radius: 25px;
@@ -105,29 +107,28 @@ table{
 	cursor: pointer;
 	transition: .2s;
 }
-.tags span.active, .tags span:hover{
-	background: transparent;
+.tags span.active, .tags > div span:hover{
+	background: #fff;
 	color:  #ffa7a7;
 }
 .tags span:active {
 	transform: scale(1);
 }
 .display {
-	display: flex;
-    flex-wrap:  wrap;
-    justify-content: center;
-	max-width: 100%;
-	width: 100%;
-	margin: 30px auto;
-	padding: 10px;
-	box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
 }
 .box-container {
 	width: 400px;
 	max-width: 90vw;
 	box-sizing: border-box;
 	border-radius: 15px;
-	margin: 10px;
+	margin: 30px;
 }
 .box-container-100 {
 	width: 800px;
@@ -152,6 +153,9 @@ table{
 
  /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
+	.d-sample {
+		padding: 0 30px;
+	}
 
 }
 
@@ -169,4 +173,36 @@ table{
   to {
     box-shadow: 0 0 8px #fff, 0 0 13px #ffe7e7, 0 0 20px #ffe7e7, 0 0 25px #ffe7e7, 0 0 36px #ffe7e7, 0 0 41px #ffe7e7, 0 0 48px #ffe7e7;
   }
+}
+
+#inputs input, #heading-input, #window-input {
+		outline: none!important;
+		display: inline-block;
+    padding: 3px 15px;
+    background: #fff;
+    color: #ffa7a7;
+    border-radius: 35px;
+    margin: 2px 3px;
+    font-size: 14px;
+    border: 2px solid #ffa7a7;
+    transition: .2s;
+    max-width: 80vw;
+}
+#heading-input, #window-input {
+	width: 260px;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+.tags textarea {
+	outline: none;
+  border: 2px solid #ffa7a7;
+	max-width: 100%;
+	box-sizing: border-box;
+	width: 260px;
+	border-radius: 10px;
+	padding: 10px;
+	min-height: 80px;
+	background: #fff;
+  color: #ffa7a7;
+  font-size: 14px;
 }
