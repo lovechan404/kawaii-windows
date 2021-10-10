@@ -10,9 +10,9 @@
 </head>
 <body>
 		<div class="display">
-			<div class="box-container d-sample">
+			<div class="box-container d-sample" id="preview">
 				
-						<div class="title"> 
+						<div class="title"> <br><br>
 							<h2>HTML + CSS</h2><h1> Kawaii Windows</h1>
 							<p class="subtitle">by lovechan404 </p><br>
 						</div>
@@ -25,111 +25,52 @@
 					</div>
 					<div class="message">
 						<h3 id="heading"></h3>
-						<p class="message-content">
-							Welcome, master!
-						</p>
+						<p class="message-content">Welcome, master!</p>
 						<div class="kawaii-button-box kb-right">
 						</div>
 					</div>
 				</div>
 				</div>
+				<br><br><br><p style="text-align: center;" class="hints"> Welcome to Kawaii Windows! </p>
+				<a href="#menu" class="scrollbtn"><i class="fas fa-chevron-down"></i></a>
 			</div> 
-			<div class="w-100"></div>
-			<div class="box-container">
-				<div class="title">
-					<div class="tags">
-						<div>
-							<span id="kawaii-a" class="active">A</span>
-							<span id="kawaii-b">B</span>
-							<span id="kawaii-c">C</span> 
-							<span id="kawaii-d">D</span>
-							<span id="kawaii-e">E</span>
-						</div>
-						<span id="lights" class="clicked"> <i class="fas fa-lightbulb"></i> </span>
+			<!-- <div class="w-100"></div> -->
+			<div class="box-container menu-container">
+					<div class="menu" id="menu">
+						<br><br> Choose your <i style="text-decoration:  line-through;">fighter</i> style: <br><br>
+						<div style="display:inline-block;">
+							<span id="kawaii-a" class="active">Slice of Life</span>
+							<span id="kawaii-b">Adventure</span>
+							<span id="kawaii-c">Mecha</span> 
+							<span id="kawaii-d">Drama</span>
+							<span id="kawaii-e">Action</span>
+						</div><br><br>
+						<!-- <span id="lights" class="clicked active"> <i class="fas fa-lightbulb"></i> Lights </span> -->
+
+
 						<br><br> Window Title <br>
 							<input type="text" name="" value="Kawaii Windows" id="window-input">
 						<br><br> Message Title <br>
 							<input type="text" name="" value="" id="heading-input">
 						<br><br> Message: <br>
 							<textarea id="msg-input">Welcome, master!</textarea>
-						<br><br>
+						<br><br> Buttons (<i id="ttt">0</i>)<br>
 						<div class="control-group">
+						   <span id="addNewButton" >Add Button</span>
 						    <form id="inputs">
 						    </form>
-						   <span id="addNewButton" >Add Button</span>
-						 </div>
-						</div>
-				</div>
-			</div>
+						 </div><br>
+						 <!-- <hr><br> -->
+						 <!-- <span class="btnbtn"> Generate HTML </span><br><br> -->
+						</div>	
+						<a href="#preview" class="scrollbtn"><i class="fas fa-chevron-up"></i></a>		
+					</div>
 			
 		</div>
 		
-		<h2>CSS</h2>
-			<div class="display">
-				<div class="box-container-100">
-					Download or copy the full css code <a href="https://raw.githubusercontent.com/lovechan404/kawaii-windows/8423a0f928b08570b5ec647dee4662312aff9343/kawaii-window.css" target="blank"> here</a> . <br> 
-					Note: Though you can link the url as source, I HIGHLY recommend that you have your own saved copy, in case something goes wrong with this link. 
-				</div>
-			</div>
+		
 
-		<h2>HTML</h2>
-			<div class="display">
-				<div class="box-container-100">
-					<h3>1. HTML Structure</h3>
-						This is the basic structure without buttons:
-							<!-- <script src="https://gist.github.com/lovechan404/8fde481cd148a85f5b54c33441b6d17d.js"></script> -->
-						Result:
-							<div class="kawaii-window kawaii-a">
-							   <div class="kawaii-header"> Kawaii Windows 
-							   </div>
-							   <h3>Hello!</h3> 
-								Let's have fun!
-							</div>
-					<h3>2. Heading</h3>
-						Insert <code>&lt;span&gt;</code> items inside the <code>&lt;div class="btns"&gt;</code> buttons on the heading. 
-						Make sure <code>&lt;div class="btns"&gt;</code> is placed BEFORE your window title.
-
-						Example:
-							<!-- <script src="https://gist.github.com/lovechan404/0aaa8b09a68e3b35008d65e775b46e4f.js"></script> -->
-						Result:
-							<div class="kawaii-window kawaii-a">
-							   <div class="kawaii-header"> Kawaii Windows <!-- site/project title -->
-							   		<div class="btns">
-									<span> - </span>
-									<span> X </span>  
-									</div>
-							   </div>
-							   <h3>Hello!</h3> <!-- message title -->
-							   Let's have fun! <!-- message -->
-							</div>
-
-					<h3>3. More Buttons </h3>
-						Align buttons by using kb-{position}. You can add buttons as many as needed. <br>
-						<table class="tbl"><thead><tr><th>Container class</th><th>Position</th></tr></thead><tbody><tr><td>kb-right</td><td>right</td></tr><tr><td>kb-left</td><td>left</td></tr><tr><td>kb-center</td><td>center</td></tr></tbody></table>
-
-
-						Example: 
-							<!-- <script src="https://gist.github.com/lovechan404/3f6a9472562b5d5c107ad2a7591c531a.js"></script> -->
-						Result:
-							<div class="kawaii-window kawaii-a">
-							   <div class="kawaii-header"> Kawaii Windows 
-							      <!-- insert top buttons -->
-							      <div class="btns"> 
-							        <span> - </span>
-							        <span> X </span>  
-							      </div>
-							      <!-- end top buttons -->
-							   </div>
-							   <h3>Hello!</h3> 
-							   Let's have fun! 
-							   <div class="kawaii-button-box kb-right">
-									<button class="kawaii-button"> OK! </button>
-								</div>
-							</div><br><br>
-				</div>
-			</div>
-
-	<p class="tags"><span>View on Github</span><span>Donate</span></p>
+	<!-- <span class="footer"><a href="#">View on Github</a><a href="#">Donate</a></span> -->
 </body>
 <script type="text/javascript" src="jquery-3.6.0.js"></script>
 <script type="text/javascript" src="script.js"></script>
