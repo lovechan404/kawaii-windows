@@ -7,7 +7,7 @@
   src: url("font/VCR_OSD_MONO.ttf") format("truetype");
 }
 body {
-	background: #fdf9f5;
+	/*background: #fdf9f5;*/
 	font-family: 'Patrick Hand', sans-serif;
 	color: #bf6666;
 	font-size: 17px;
@@ -53,7 +53,7 @@ h2 {
 }
 a {
 	font-weight: bold;
-	color: #fee;
+	color: #bf6666;
 	text-decoration: none;
 }
 table{
@@ -65,10 +65,12 @@ table{
 	padding: 2px 5px;
 	border: 1px solid #fff;
 }
-hr {
-	margin: 20px 0;
-	border: 1px solid #fff;
-	background: #fff;
+.menu hr {
+	margin: 30px 0;
+	border: none;
+	border-bottom: 3px dotted #bf6666;
+	background: transparent;
+	opacity: .5;
 }
 .test {
     max-width: 450px;
@@ -121,6 +123,10 @@ i {
 .btnbtn:hover, .menu span.active, .menu > div span:hover{
 	background: #fee;
 	color:  #bf6666;
+}
+#lights.active {
+	color:  #fee;
+	background: #ef9393;
 }
 .menu span:active {
 	transform: translateY(2px);
@@ -248,7 +254,7 @@ i {
 	width: 260px!important;
 	border-radius: 5px;
 	padding: 10px;
-	min-height: 80px;
+	min-height: 160px;
 	background: #fee;
   color: #bf6666;
   font-size: 14px;

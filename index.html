@@ -12,57 +12,67 @@
 		<div class="display">
 			<div class="box-container d-sample" id="preview">
 				
+				<div id="here-appear-theimages"></div>
+				<span class="amazingbtn" id="amazingbtn"> amazingbtn </span>
 						<div class="title"> <br><br>
 							<h2>HTML + CSS</h2><h1> Kawaii Windows</h1>
 							<p class="subtitle">by lovechan404 </p><br>
 						</div>
-				<div class="test lights-on">
-
-				<div class="kawaii-window kawaii-a">
+				<div class="test lights-off">
+				
+				<div class="kawaii-window kawaii-a" id="my-node">
 					<div class="kawaii-header"> 
-						<span id="window-title"> Kawaii Windows </span>
-						<div class="btns"> <span> X </span> </div>
+						<div id="window-title" class="window-title"> kaw.exe </div>
+						<div class="btns"> 
+							<span> - </span><span id="close-window"> X </span>
+						</div>
 					</div>
 					<div class="message">
-						<h3 id="heading"></h3>
-						<p class="message-content">Welcome, master!</p>
+						<h3 id="heading">❤️❤️❤️</h3>
+						<p class="message-content">Hi! This is lovechan404. Thank you to all the people who are supporting and sharing my work. You guys rock!
+
+Here are links you might wanna check: </p>
 						<div class="kawaii-button-box kb-right">
 						</div>
 					</div>
 				</div>
 				</div>
-				<br><br><br><p style="text-align: center;" class="hints"> Welcome to Kawaii Windows! </p>
+				<br><br><br><p style="text-align: center;" class="hints"> </p>
 				<a href="#menu" class="scrollbtn"><i class="fas fa-chevron-down"></i></a>
 			</div> 
 			<!-- <div class="w-100"></div> -->
 			<div class="box-container menu-container">
 					<div class="menu" id="menu">
-						<br><br> Choose your <i style="text-decoration:  line-through;">fighter</i> style: <br><br>
+						<br><br> Choose your style: <br><br>
 						<div style="display:inline-block;">
-							<span id="kawaii-a" class="active">Slice of Life</span>
-							<span id="kawaii-b">Adventure</span>
-							<span id="kawaii-c">Mecha</span> 
-							<span id="kawaii-d">Drama</span>
-							<span id="kawaii-e">Action</span>
-						</div><br><br>
-						<!-- <span id="lights" class="clicked active"> <i class="fas fa-lightbulb"></i> Lights </span> -->
+							<span id="kawaii-a" class="active">a</span>
+							<span id="kawaii-b">b</span>
+							<span id="kawaii-c">c</span> 
+							<span id="kawaii-d">d</span>
+							<span id="kawaii-e">e</span>
+						</div>
 
+						<br><hr> Window Title <br><br>
+							<input type="text" name="" value="kaw.exe" id="window-input">
+						<br><hr> Message Title <br><br>
+							<input type="text" name="" value="❤️❤️❤️" id="heading-input">
+						<br><hr> Message: <br><br>
+							<textarea id="msg-input">Hi! This is lovechan404. Thank you to all the people who are supporting and sharing my work. You guys rock!
 
-						<br><br> Window Title <br>
-							<input type="text" name="" value="Kawaii Windows" id="window-input">
-						<br><br> Message Title <br>
-							<input type="text" name="" value="" id="heading-input">
-						<br><br> Message: <br>
-							<textarea id="msg-input">Welcome, master!</textarea>
+Here are links you might wanna check: </textarea>
 						<br><br> Buttons (<i id="ttt">0</i>)<br>
 						<div class="control-group">
 						   <span id="addNewButton" >Add Button</span>
 						    <form id="inputs">
 						    </form>
 						 </div><br>
-						 <!-- <hr><br> -->
 						 <!-- <span class="btnbtn"> Generate HTML </span><br><br> -->
-						</div>	
+						 <br><br><hr>
+						<span id="lights" class="clicked"> <i class="fas fa-lightbulb"></i> </span>
+						  <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'><br/>
+						  <span id="domdomdom">dom-to-image</span>
+						</div>
+
 						<a href="#preview" class="scrollbtn"><i class="fas fa-chevron-up"></i></a>		
 					</div>
 			
@@ -73,5 +83,7 @@
 	<!-- <span class="footer"><a href="#">View on Github</a><a href="#">Donate</a></span> -->
 </body>
 <script type="text/javascript" src="jquery-3.6.0.js"></script>
+<script type="text/javascript" src="html2canvas/dist/html2canvas.js"></script>
+<script type="text/javascript" src="dist/dom-to-image.min.js" /></script>
 <script type="text/javascript" src="script.js"></script>
 </html>
