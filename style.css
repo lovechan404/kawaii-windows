@@ -2,14 +2,14 @@
   font-family: "Patrick Hand";
   font-style: normal;
   font-weight: 400;
-  src: local('Patrick Hand'), url("font/PatrickHand-Regular.ttf") format("truetype");
+  src: local('Patrick Hand'), url("https://lovechan404.github.io/kawaii-windows/font/PatrickHand-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "VCR_OSD_MONO";
   font-style: normal;
   font-weight: 400;
-  src: local('VCR_OSD_MONO'), local('VCR OSD MONO'), url("font/VCR_OSD_MONO.ttf") format("truetype");
+  src: local('VCR_OSD_MONO'), local('VCR OSD MONO'), url("https://lovechan404.github.io/kawaii-windows/font/VCR_OSD_MONO.ttf") format("truetype");
 }
 body {
 	/*background: #fdf9f5;*/

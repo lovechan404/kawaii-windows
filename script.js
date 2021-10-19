@@ -3,16 +3,16 @@
 $(document).ready(function() {
 	$( "#amazingbtn" ).click(function(){
 var style = {
-  transform: 'scale(2)',
-  'transform-origin': 'top left'
+  'transform': 'scale(2)',
+  'transform-origin': 'top left',
 };
 var nodeWidth = document.getElementById('kawaii-window-save').offsetWidth * 2;
 var nodeHeight = document.getElementById('kawaii-window-save').offsetHeight * 2;
 
   var node = document.getElementById('kawaii-window-save');
 	domtoimage.toPng(node, { style: style, 
-    width: nodeWidth, // this will be the intended width of your SVG
-    height: nodeHeight // this will be the intended height of your SVG
+    width: nodeWidth, 
+    height: nodeHeight 
  })
     .then(function (dataUrl) {
         var img = new Image();
@@ -23,6 +23,10 @@ var nodeHeight = document.getElementById('kawaii-window-save').offsetHeight * 2;
         console.error('oops, something went wrong!', error);
     });
 });
+
+
+
+
 
 	$( "#kawaii-a" ).click(function() {
 		$(this).addClass('active');
