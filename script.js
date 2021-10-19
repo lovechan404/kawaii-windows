@@ -71,13 +71,13 @@ var nodeHeight = document.getElementById('kawaii-window-save').offsetHeight * 2;
 	    var elem1 = $("<input/>",{
 	        type: "text",
 	        name: "teamName[]",
-	        value: 'Preview'
+	        value: '< Preview'
 	    });
 	   
 	    var elem2 = $("<input/>",{
 	        type: "text",
 	        name: "teamName[]",
-	        value: 'Next'
+	        value: 'Next >'
 	    });
 
 	    var removeLink1 = $("<span/>", {class: "closeinput"}).html("X").click(function(){
@@ -162,9 +162,8 @@ var nodeHeight = document.getElementById('kawaii-window-save').offsetHeight * 2;
 
 		var words = [
 	    'More colors will be added soon!',
-	    'BUG: preview also edits the next next button. Please edit button before adding more.',
-	    'BUG: preview also edits the next next button. Please edit button before adding more.',
-	    'BUG: preview also edits the next next button. Please edit button before adding more.',
+	    'Bug on multiple button preview. Please edit button before adding more.',
+	    'Bug on multiple button preview. Please edit button before adding more.',
 	    'Goats actually have accents lol.',
 	    'What should I add next?',
 	    ];
