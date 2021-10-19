@@ -1,14 +1,19 @@
 @font-face {
   font-family: "Patrick Hand";
-  src: url("font/PatrickHand-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  src: local('Patrick Hand'), url("font/PatrickHand-Regular.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "VCR_OSD_MONO";
-  src: url("font/VCR_OSD_MONO.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  src: local('VCR_OSD_MONO'), local('VCR OSD MONO'), url("font/VCR_OSD_MONO.ttf") format("truetype");
 }
 body {
 	/*background: #fdf9f5;*/
-	font-family: 'Patrick Hand', sans-serif;
+	font-family: 'Patrick Hand', cursive;
 	color: #bf6666;
 	font-size: 17px;
 	padding: 0;
@@ -180,7 +185,7 @@ i {
 @media (min-width: 768px) {
 	body {
 		max-height: 100vh;
-		overflow: hidden;
+		/*overflow: hidden;*/
 	}
 	.d-sample {
 		padding: 0 30px;
