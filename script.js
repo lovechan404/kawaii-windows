@@ -162,10 +162,13 @@ var nodeHeight = document.getElementById('kawaii-window-save').offsetHeight * 2;
 
 		var words = [
 	    'More colors will be added soon!',
-	    'BUG: preview also edits the next next button. So kindly edit button before adding more.',
-	    'BUG: preview also edits the next next button. So kindly edit button before adding more.',
-	    'BUG: preview also edits the next next button. So kindly edit button before adding more.',
-	    'Please contact me if something is not working. Thanks!',
+	    'BUG: preview also edits the next next button.',
+	    'Tip: button before adding more.',
+	    'BUG: preview also edits the next next button.',
+	    'Tip: button before adding more.',
+	    'BUG: preview also edits the next next button.',
+	    'Tip: button before adding more.',
+	    'Goats actually have accents lol.',
 	    'What should I add next?',
 	    'I have a black cat named Luna',
 	    ];
