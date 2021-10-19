@@ -162,15 +162,11 @@ var nodeHeight = document.getElementById('kawaii-window-save').offsetHeight * 2;
 
 		var words = [
 	    'More colors will be added soon!',
-	    'BUG: preview also edits the next next button.',
-	    'Tip: button before adding more.',
-	    'BUG: preview also edits the next next button.',
-	    'Tip: button before adding more.',
-	    'BUG: preview also edits the next next button.',
-	    'Tip: button before adding more.',
+	    'BUG: preview also edits the next next button. Please edit button before adding more.',
+	    'BUG: preview also edits the next next button. Please edit button before adding more.',
+	    'BUG: preview also edits the next next button. Please edit button before adding more.',
 	    'Goats actually have accents lol.',
 	    'What should I add next?',
-	    'I have a black cat named Luna',
 	    ];
 
     var getRandomWord = function () {

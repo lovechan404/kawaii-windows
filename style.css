@@ -13,7 +13,7 @@
 }
 body {
 	/*background: #fdf9f5;*/
-	font-family: 'VCR_OSD_MONO', sans-serif;
+	font-family: 'Patrick Hand', sans-serif;
 	color: #bf6666;
 	font-size: 17px;
 	padding: 0;
@@ -101,7 +101,26 @@ i {
 	max-width: 50%;
 	border: 10px solid #fff;
 }
-.subtitle, .menu {
+.title {
+	position: relative;
+	margin: 0;
+	margin-bottom: 15px;
+}
+.title .subtitle {
+	font-family: 'Patrick Hand';
+	display: block;
+	font-size: 14px;
+	font-weight: normal;
+	/*color: #fee;*/
+	/*padding: 15px 8px;*/
+	/*background: #fee;*/
+		/*border: 3px dotted #bf6666;*/
+	/*border-radius: 3px;*/
+	margin-top: 10px;
+	/*border: 1px solid #bf6666;*/
+	/*box-shadow: 3px 3px 0 #7d3434;*/
+}
+.menu {
 	text-align: center;
 }
 .menu {
@@ -207,6 +226,10 @@ i {
 		overflow-y: scroll;
 
     box-shadow: inset 2px 0px 11px 0 #bf6666;
+	}
+	.title {
+		margin: 30px auto;
+		width: fit-content;
 	}
 
 }
