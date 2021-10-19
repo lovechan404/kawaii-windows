@@ -43,11 +43,16 @@
 				<p style="text-align: center;" class="hints">
 					<span class="scrollbtn" style="font-size: 17px;"> Scroll down to create your own kawaii window! </span> 
 				</p>
-				<a href="#menu" class="scrollbtn"><i class="fas fa-chevron-down"></i></a>
+				<a href="#menu" class="scrollbtn" style="position: absolute;bottom: 30px;background: #fff;width: 100%;z-index: 99;right: 0;left: 0;">
+					<i class="fas fa-chevron-down"></i>
+				</a>
 			</div> 
 			<!-- <div class="w-100"></div> -->
 			<div class="box-container menu-container">
 					<div class="menu" id="menu">
+						<a href="#preview" class="scrollbtn" style=" position: sticky; top: 0; background: #ffa7a7; width: 100%; z-index: 99; ">
+							<i class="fas fa-chevron-up"></i>
+						</a>
 						<br><br> Choose your style: <br><br>
 						<div style="display:inline-block;">
 							<span id="kawaii-a" class="active">a</span>
@@ -72,11 +77,11 @@
 						 <!-- <span class="btnbtn"> Generate HTML </span><br><br> -->
 						 <br><br><hr>
 						<span id="lights" class="clicked"> <i class="fas fa-lightbulb"></i> </span>
-						  <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'><br/>
-						  <span id="domdomdom">dom-to-image</span>
+						  <!-- <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'><br/> -->
+						  <!-- <span id="domdomdom">dom-to-image</span> -->
 						</div>
 
-						<a href="#preview" class="scrollbtn"><i class="fas fa-chevron-up"></i></a>		
+						<!-- <a href="#preview" class="scrollbtn"><i class="fas fa-chevron-up"></i></a>		 -->
 					</div>
 			
 		</div>
