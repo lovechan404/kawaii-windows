@@ -178,7 +178,6 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
     document.getElementById("loader1").style.display = "block";
-    document.getElementById("loader2").style.display = "none";
     document.getElementById('preview-here').innerHTML ='';
 }
 

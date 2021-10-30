@@ -206,6 +206,7 @@ i {
 }
 .kawaii-window {
 	width: 450px;
+	max-width: 100%!important;
 }
 .modal {
 	display: none;
