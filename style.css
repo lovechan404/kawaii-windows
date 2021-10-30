@@ -187,9 +187,6 @@ i {
 	width: 100%;
 	box-sizing: border-box;
 	border-radius: 5px;
-
-	height: 100vh;
-	overflow-y: scroll;
 	/*margin: 30px;*/
 }
 .box-container-100 {
@@ -363,6 +360,10 @@ i {
 		text-align: center;
 		padding: 30px;
 	}
+	.box-container {
+	height: 100vh;
+	overflow-y: scroll;
+}
 
 }
 
