@@ -245,9 +245,11 @@ i {
 		height: auto;
 	}
 	#loader1 {
-		position: absolute;
-		top: 45%;
-		left: 46%;
+		    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    bottom: 0;
 	}
 	.lds-ellipsis {
   display: inline-block;
@@ -342,10 +344,13 @@ i {
 		width: fit-content;
 	}
 	.modal-content {
-		background-color: #fefefe;
-	  margin: 50px auto;
-	  height: fit-content;
-	  width: fit-content;
+		background-color: #fee;
+    margin: 10px auto;
+    text-align: center;
+    border: 1px solid #888;
+    height: 100vh;
+    width: calc(100vw - 20px);
+    border-radius: 25px;
 	}
 	.image-buttons {
 		padding-top: 20px;
