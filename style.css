@@ -139,7 +139,7 @@ i {
 .image-buttons {
 	padding-top: 50px;
 }
-.menu span, .image-buttons span {
+.menu span, .image-buttons span, #preview-here a {
 	display: inline-block;
 	padding: 3px 15px;
 	background: #ef9393;
@@ -152,7 +152,7 @@ i {
 	font-family: 'VCR_OSD_MONO';
 }
 
-.image-buttons span:hover, .btnbtn:hover, .menu span.active, .menu > div span:hover{
+#preview-here a:hover, .image-buttons span:hover, .btnbtn:hover, .menu span.active, .menu > div span:hover{
 	background: #fee;
 	color:  #bf6666;
 }
@@ -221,7 +221,7 @@ i {
   background-color: rgba(0,0,0,0.4);
 }
 .modal-content {
-	 background-color: #fefefe;
+	 background-color: #fee;
   margin: auto;
   text-align: center;
   border: 1px solid #888;
@@ -240,7 +240,70 @@ i {
 		text-align: center;
 		padding: 50px 0;
 	}
-
+#preview-here img {
+		max-width: 100%;
+		height: auto;
+	}
+	#loader1 {
+		position: absolute;
+		top: 45%;
+		left: 46%;
+	}
+	.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #bf6666;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
 
 
  /*Small devices (landscape phones, 576px and up)*/
@@ -284,8 +347,12 @@ i {
 	  height: fit-content;
 	  width: fit-content;
 	}
+	.image-buttons {
+		padding-top: 20px;
+	}
 	#preview-here {
 		margin: 50px;
+		margin-top: 20px;
 		min-height: 200px;
 		width: 600px;
 		text-align: center;

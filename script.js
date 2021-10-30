@@ -135,30 +135,41 @@ $(document).ready(function() {
 
 	$( "#amazingbtn" ).click(function(){
 		// Get the modal
+		// $("#kawaii-window-save").css("transform", "scale(2)");
 var modal = document.getElementById("myModal");
 
   modal.style.display = "block";
 
-	// var nodeWidth = document.getElementById('kawaii-window-save').clientWidth * 2;
-	// var nodeHeight = document.getElementById('kawaii-window-save').clientHeight * 2;
+	var node = document.getElementById('kawaii-window-save');
+	var scale = 3;
+	var style = {
+    transform: 'scale('+scale+')',
+    transformOrigin: 'top left',
+    width: node.offsetWidth  + "px",
+     height: node.offsetHeight  + "px"
+	}
+	var param = {
+     height: node.offsetHeight * scale + 50,
+     width: node.offsetWidth * scale + 100,
+      quality: 1,
+     style
+	}
 
-	  var node = document.getElementById('kawaii-window-save');
-		domtoimage.toPng(node, { 
-			style: {
-		    // 'transform': 'scale(2)',
-		    // 'transform-origin': 'top left'
-		  },
-			// width: nodeWidth,
-		  // height: nodeHeight
-	 })
+		domtoimage.toPng(node, param)
+	 
 	    .then(function (dataUrl) {
 	        var img = new Image();
 	        img.src = dataUrl;
 
     			document.getElementById('preview-here').innerHTML ='';
-	        setTimeout(function(){$('#loader1').fadeOut('fast');},1500);
-	        // setTimeout(function(){$('#loader2').fadeIn('fast');},2000);
-	        setTimeout(function(){document.getElementById('preview-here').appendChild(img);},1500);
+	        setTimeout(function(){$('#loader1').fadeOut('fast');},1000);
+	        setTimeout(function(){document.getElementById('preview-here').appendChild(img);},1000);
+
+	        var link = document.createElement('a');
+        	link.download = 'kawaii-window.png';
+        	link.href = dataUrl;
+        	link.innerText = "Download";
+        	setTimeout(function(){document.getElementById('preview-here').appendChild(link);},1000);
 	    })
 	    .catch(function (error) {
 	        console.error('oops, something went wrong!', error);
@@ -186,7 +197,6 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
     document.getElementById("loader1").style.display = "none";
-    document.getElementById("loader2").style.display = "none";
   }
 }
 
