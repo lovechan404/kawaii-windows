@@ -1,15 +1,18 @@
 @font-face {
-  font-family: "Patrick Hand";
+  font-family: Patrick Hand;
   font-style: normal;
   font-weight: 400;
-  src: local('Patrick Hand'), url("https://lovechan404.github.io/kawaii-windows/font/PatrickHand-Regular.ttf") format("truetype");
+  font-display: block;
+  src: local('Patrick Hand'), url("font/PatrickHand-Regular.ttf") format("truetype");
+
 }
 
 @font-face {
-  font-family: "VCR_OSD_MONO";
+  font-family: VCR_OSD_MONO;
   font-style: normal;
   font-weight: 400;
-  src: local('VCR_OSD_MONO'), local('VCR OSD MONO'), url("https://lovechan404.github.io/kawaii-windows/font/VCR_OSD_MONO.ttf") format("truetype");
+  font-display: block;
+  src: local('VCR_OSD_MONO'), local('VCR OSD MONO'), url("font/VCR_OSD_MONO.ttf") format("truetype");
 }
 body {
 	/*background: #fdf9f5;*/
@@ -133,7 +136,10 @@ i {
 .menu-container {
 	background: #ffa7a7;
 }
-.menu span {
+.image-buttons {
+	padding-top: 50px;
+}
+.menu span, .image-buttons span {
 	display: inline-block;
 	padding: 3px 15px;
 	background: #ef9393;
@@ -143,8 +149,10 @@ i {
 	border: 2px solid #bf6666;
 	cursor: pointer;
 	transition: .2s;
+	font-family: 'VCR_OSD_MONO';
 }
-.btnbtn:hover, .menu span.active, .menu > div span:hover{
+
+.image-buttons span:hover, .btnbtn:hover, .menu span.active, .menu > div span:hover{
 	background: #fee;
 	color:  #bf6666;
 }
@@ -194,7 +202,34 @@ i {
 		white-space: pre-wrap;
 		hyphens: auto;
 		overflow-wrap: anywhere;
+		max-width: 100%;
 }
+.kawaii-window {
+	width: 450px;
+}
+.modal {
+	display: none;
+ position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+	 background-color: #fefefe;
+  margin: auto;
+  text-align: center;
+  border: 1px solid #888;
+  height: 100vh;
+  width: 100vw;
+  border-radius: 25px;
+}
+
+
 
  /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
@@ -230,6 +265,24 @@ i {
 	.title {
 		margin: 30px auto;
 		width: fit-content;
+	}
+	.modal-content {
+		background-color: #fefefe;
+	  margin: 50px auto;
+	  height: fit-content;
+	  width: fit-content;
+	}
+	#preview-here {
+		background-image: url('https://wallpaperaccess.com/full/3040338.jpg') ;
+		background-color: #fee;
+		background-position: center;
+		background-size: cover;
+		border: 3px solid #bf6666;
+		margin: 50px;
+		min-height: 200px;
+		width: 600px;
+		text-align: center;
+		padding: 30px;
 	}
 
 }

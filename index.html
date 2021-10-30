@@ -5,31 +5,32 @@
 	<title> Kawaii Window </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/92a6ff382c.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="style.css" >
-	<link rel="stylesheet" type="text/css" href="kawaii-window.css" >
+	<link rel="stylesheet" type="text/css" href="https://lovechan404.github.io/kawaii-windows/style.css" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://lovechan404.github.io/kawaii-windows/kawaii-window.css" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="kawaii-window.css"> -->
 </head>
 <body>
 		<div class="display">
 			<div class="box-container d-sample" id="preview">
 				
-				<div id="preview-here"></div>
 				<span class="amazingbtn" id="amazingbtn"> amazingbtn </span>
 						<div class="title"> 
 							<h2>HTML + CSS</h2><h1> Kawaii Windows</h1>
 							<h2 class="subtitle">by lovechan404 </h2><br>
 						</div>
 				<div class="test lights-off" >
-				<div id="kawaii-window-save">
+				<div id="kawaii-window-save" style="padding:10px">
 				<div class="kawaii-window kawaii-a" >
 					<div class="kawaii-header"> 
-						<div id="window-title" class="window-title"> Biology </div>
+						<div id="window-title" class="window-title" style="font-family: VCR_OSD_MONO;"> Biology </div>
 						<div class="btns"> 
 							<span> - </span><span id="close-window"> X </span>
 						</div>
 					</div>
 					<div class="message">
 						<h3 id="heading">Mitochondria</h3>
-						<p class="message-content">an organelle found in large numbers in most cells, in which the biochemical processes of respiration and energy production occur. </p>
+						<div class="message-content">an organelle found in large numbers in most cells, in which the biochemical processes of respiration and energy production occur. </div>
 						<div class="kawaii-button-box kb-right">
 						</div>
 					</div>
@@ -83,10 +84,18 @@
 			
 		</div>
 		
-		 
+ <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="image-buttons"><span class="close"> Close </span> <span>Download</span></div>
+    <div id="preview-here"> <div id="loader1"> Generating Image </div> </div>
+  </div>
+
+</div>
 
 </body>
 <script type="text/javascript" src="jquery-3.6.0.js"></script>
-<script type="text/javascript" src="dom-to-image.js" /></script>
+<script type="text/javascript" src="dom-to-image-more-min.js" /></script>
 <script type="text/javascript" src="script.js?v=1.1"></script>
 </html>

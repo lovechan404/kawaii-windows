@@ -1,28 +1,6 @@
 
 
 $(document).ready(function() {
-	$( "#amazingbtn" ).click(function(){
-var style = {
-  'transform': 'scale(2)',
-  'transform-origin': 'top left',
-};
-var nodeWidth = document.getElementById('kawaii-window-save').offsetWidth * 2;
-var nodeHeight = document.getElementById('kawaii-window-save').offsetHeight * 2;
-
-  var node = document.getElementById('kawaii-window-save');
-	domtoimage.toPng(node, { style: style, 
-    width: nodeWidth, 
-    height: nodeHeight 
- })
-    .then(function (dataUrl) {
-        var img = new Image();
-        img.src = dataUrl;
-        document.getElementById('preview-here').appendChild(img);
-    })
-    .catch(function (error) {
-        console.error('oops, something went wrong!', error);
-    });
-});
 
 
 
@@ -71,40 +49,6 @@ var nodeHeight = document.getElementById('kawaii-window-save').offsetHeight * 2;
 	});
 
 
-
-	    var elem1 = $("<input/>",{
-	        type: "text",
-	        name: "teamName[]",
-	        value: '< Preview'
-	    });
-	   
-	    var elem2 = $("<input/>",{
-	        type: "text",
-	        name: "teamName[]",
-	        value: 'Next >'
-	    });
-
-	    var removeLink1 = $("<span/>", {class: "closeinput"}).html("X").click(function(){
-	        var index = $(this).index('.closeinput');
-	        $('.test .kawaii-button.button-added').eq(index).remove();
-	        $(elem1).remove();
-	        $(this).remove();
-	        $('#ttt').html($( ".closeinput" ).length);
-	    });
-	    var removeLink2 = $("<span/>", {class: "closeinput"}).html("X").click(function(){
-	        var index = $(this).index('.closeinput');
-	        $('.test .kawaii-button.button-added').eq(index).remove();
-	        $(elem2).remove();
-	        $(this).remove();
-	        $('#ttt').html($( ".closeinput" ).length);
-	    });
-
-	    $('.test .kawaii-button-box').append('<button class="kawaii-button button-added"> < Preview </button><button class="kawaii-button button-added"> Next > </button>');
-
-
-	  $("#inputs").append(elem1).append(removeLink1);
-	  $("#inputs").append(elem2).append(removeLink2);
-		$('#ttt').html($( ".closeinput" ).length);
 
 
 
@@ -189,10 +133,62 @@ var nodeHeight = document.getElementById('kawaii-window-save').offsetHeight * 2;
 });
 
 
+	$( "#amazingbtn" ).click(function(){
+		// Get the modal
+var modal = document.getElementById("myModal");
+
+  modal.style.display = "block";
+
+	// var nodeWidth = document.getElementById('kawaii-window-save').clientWidth * 2;
+	// var nodeHeight = document.getElementById('kawaii-window-save').clientHeight * 2;
+
+	  var node = document.getElementById('kawaii-window-save');
+		domtoimage.toPng(node, { 
+			style: {
+		    // 'transform': 'scale(2)',
+		    // 'transform-origin': 'top left'
+		  },
+			// width: nodeWidth,
+		  // height: nodeHeight
+	 })
+	    .then(function (dataUrl) {
+	        var img = new Image();
+	        img.src = dataUrl;
+
+    			document.getElementById('preview-here').innerHTML ='';
+	        setTimeout(function(){$('#loader1').fadeOut('fast');},1500);
+	        // setTimeout(function(){$('#loader2').fadeIn('fast');},2000);
+	        setTimeout(function(){document.getElementById('preview-here').appendChild(img);},1500);
+	    })
+	    .catch(function (error) {
+	        console.error('oops, something went wrong!', error);
+	    });
+});
+
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
 
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+    document.getElementById("loader1").style.display = "block";
+    document.getElementById("loader2").style.display = "none";
+    document.getElementById('preview-here').innerHTML ='';
+}
 
-
-
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    document.getElementById("loader1").style.display = "none";
+    document.getElementById("loader2").style.display = "none";
+  }
+}
 
 
