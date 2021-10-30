@@ -229,6 +229,17 @@ i {
   width: 100vw;
   border-radius: 25px;
 }
+#preview-here {
+		background-image: url('https://wallpaperaccess.com/full/3040338.jpg') ;
+		background-color: #fee;
+		background-position: center;
+		background-size: cover;
+		border: 3px solid #bf6666;
+		margin: 15px;
+		min-height: 300px;
+		text-align: center;
+		padding: 50px 0;
+	}
 
 
 
@@ -274,11 +285,6 @@ i {
 	  width: fit-content;
 	}
 	#preview-here {
-		background-image: url('https://wallpaperaccess.com/full/3040338.jpg') ;
-		background-color: #fee;
-		background-position: center;
-		background-size: cover;
-		border: 3px solid #bf6666;
 		margin: 50px;
 		min-height: 200px;
 		width: 600px;
