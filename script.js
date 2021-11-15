@@ -4,7 +4,10 @@ $(document).ready(function() {
 
 
 
-
+	$( ".clear-input" ).click(function() {
+		$(this).siblings('input').val('');
+		$(this).siblings('textarea').val('');
+	});
 	$( "#kawaii-a" ).click(function() {
 		$(this).addClass('active');
 		$(this).siblings('span').removeClass();
@@ -44,7 +47,6 @@ $(document).ready(function() {
 	$('#lights').click(function () {
 		$('.test').toggleClass("lights-on lights-off"); //you can list several class names 
 		$('#lights').toggleClass("active a");
-      	e.preventDefault();
 	});
 
 

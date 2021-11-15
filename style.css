@@ -398,7 +398,7 @@ i {
     max-width: 80vw;
 }
 #heading-input, #window-input {
-	width: 260px;
+	width: 194px;
 	max-width: 100%;
 	box-sizing: border-box;
 }
@@ -407,11 +407,20 @@ i {
   border: 2px solid #bf6666;
 	max-width: 100%;
 	box-sizing: border-box;
-	width: 260px!important;
+	width: 194px!important;
 	border-radius: 5px;
 	padding: 6px 10px;
 	min-height: 160px;
 	background: #fee;
   color: #bf6666;
   font-size: 14px;
+}
+.clear-input {
+	/*float: right;*/
+}
+.input-container {
+	width: fit-content;
+	margin: auto;
+	display: flex;
+	align-items: flex-start;
 }
