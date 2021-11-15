@@ -7,6 +7,8 @@ $(document).ready(function() {
 	$( ".clear-input" ).click(function() {
 		$(this).siblings('input').val('');
 		$(this).siblings('textarea').val('');
+		$(this).siblings('input').keyup();
+		$(this).siblings('textarea').keyup();
 	});
 	$( "#kawaii-a" ).click(function() {
 		$(this).addClass('active');
