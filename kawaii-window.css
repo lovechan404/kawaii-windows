@@ -24,6 +24,9 @@
 	background: transparent!important;
 	box-sizing: border-box;
 }
+.message #heading {
+	white-space: pre-wrap;
+}
 .break-btn {
 	float: right;
 }
@@ -70,6 +73,7 @@
 	height: fit-content;
 }
 .kawaii-button-box {
+	margin-top: 10px;
 	margin-bottom: 15px;
 }
 h3 {
@@ -127,6 +131,7 @@ h3 {
 		background: #fee;
 		color: #bf6666;
 		font-family: 'VCR_OSD_MONO', sans-serif;
+		margin-top: 5px;
 	}
 	.kawaii-a .secondary-button {
 	border: 2px solid #bf6666;

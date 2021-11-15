@@ -136,9 +136,6 @@ i {
 .menu-container {
 	background: #ffa7a7;
 }
-.image-buttons {
-	padding-top: 50px;
-}
 .menu span, .image-buttons span, #preview-here a {
 	display: inline-block;
 	padding: 3px 15px;
@@ -220,19 +217,20 @@ i {
 .modal-content {
 	 background-color: #fee;
   margin: auto;
+  margin-top: 10px;
   text-align: center;
   border: 1px solid #888;
-  height: 100vh;
-  width: 100vw;
+  min-height: 70vh;
+  max-width: 85vw;
   border-radius: 25px;
+  padding: 15px;
 }
 #preview-here {
 		background-image: url('https://wallpaperaccess.com/full/3040338.jpg') ;
 		background-color: #fee;
 		background-position: center;
 		background-size: cover;
-		border: 3px solid #bf6666;
-		margin: 15px;
+		margin: 15px auto;
 		min-height: 300px;
 		text-align: center;
 		padding: 50px 0;
@@ -345,15 +343,12 @@ i {
     margin: 10px auto;
     text-align: center;
     border: 1px solid #888;
-    height: 100vh;
-    width: calc(100vw - 20px);
+    min-height: 70vh;
+    max-width: 80vw;
     border-radius: 25px;
 	}
-	.image-buttons {
-		padding-top: 20px;
-	}
 	#preview-here {
-		margin: 50px;
+		margin: 50px auto;
 		margin-top: 20px;
 		min-height: 200px;
 		width: 600px;

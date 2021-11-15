@@ -1,5 +1,4 @@
 
-
 $(document).ready(function() {
 
 
@@ -149,8 +148,8 @@ var modal = document.getElementById("myModal");
      height: node.offsetHeight  + "px"
 	}
 	var param = {
-     height: node.offsetHeight * scale + 50,
-     width: node.offsetWidth * scale + 100,
+     height: node.offsetHeight * scale,
+     width: node.offsetWidth * scale ,
       quality: 1,
      style
 	}
@@ -175,6 +174,7 @@ var modal = document.getElementById("myModal");
 	        console.error('oops, something went wrong!', error);
 	    });
 });
+
 
 var modal = document.getElementById("myModal");
 
