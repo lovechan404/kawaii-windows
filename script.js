@@ -221,7 +221,7 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
     document.getElementById("loader1").style.display = "block";
-    document.getElementById('preview-here').innerHTML ='';
+    document.getElementById('generated-image').innerHTML ='';
 }
 
 // When the user clicks anywhere outside of the modal, close it
