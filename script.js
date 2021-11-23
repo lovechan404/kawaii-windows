@@ -83,6 +83,42 @@ $(document).ready(function() {
 
 
 
+			var elem1 = $("<input/>",{
+	        type: "text",
+	        name: "teamName[]",
+	        value: "Yes"
+	    });
+	   var elem2 = $("<input/>",{
+	        type: "text",
+	        name: "teamName[]",
+	        value: "No"
+	    });
+
+
+	    var removeLink1 = $("<span/>", {class: "closeinput"}).html("X").click(function(){
+	        var index = $(this).index('.closeinput');
+	        $('.test .kawaii-button.button-added').eq(index).remove();
+	        $(elem1).remove();
+	        $(this).remove();
+	        $('#ttt').html($( ".closeinput" ).length);
+	    });
+	    var removeLink2 = $("<span/>", {class: "closeinput"}).html("X").click(function(){
+	        var index = $(this).index('.closeinput');
+	        $('.test .kawaii-button.button-added').eq(index).remove();
+	        $(elem2).remove();
+	        $(this).remove();
+	        $('#ttt').html($( ".closeinput" ).length);
+	    });
+
+	  $("#inputs").append(elem1).append(removeLink1);
+	  $("#inputs").append(elem2).append(removeLink2);
+		$('#ttt').html($( ".closeinput" ).length);
+
+
+
+
+
+
 	$("#addNewButton").click(function(){
 		var btn = ["I'm cute.",
 		"Nope!",
