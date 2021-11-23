@@ -101,8 +101,8 @@ h3 {
 		border-radius:  0;
 		padding: 5px 15px 8px 15px;
 		background: #ffa7a7;
-		background-image: url('red_lake_by_bisbiswas_ddsbu2m-fullview.jpg') ;
-		background-position: top;
+		/*background-image: url('https://images.pexels.com/photos/545521/pexels-photo-545521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') ;*/
+		background-position: center;
 		background-size: cover;
 		border-bottom: 1px solid #bf6666;
 	}
@@ -148,17 +148,18 @@ h3 {
 		/*font-family: 'VCR_OSD_MONO', sans-serif;*/
 		box-sizing: border-box;
 		border-radius: 3px;
-		background: #fff;
+		background: #ef9393;
 		color: #fff;
 
-		background-image: url('pink_sunset_by_itsendy_de05el9-fullview.jpg') ;
+		/*background-image: url('pink_sunset_by_itsendy_de05el9-fullview.jpg') ;*/
 		background-position: center;
 		background-size: cover;
 	}
 	.kawaii-b .message {
 		padding: 0 15px;
 		padding-bottom: 15px;
-		text-shadow: 1px 1px 2px #000;
+		/*text-shadow: 1px 1px 2px #000;*/
+		font-size: 19px;
 	}
 	.kawaii-b .kawaii-header{
 		border-radius:  0;

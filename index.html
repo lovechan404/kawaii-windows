@@ -2,37 +2,41 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title> Kawaii Window </title>
+	<title> Kawaii Windows Generator by lovechan404 </title>
+	<meta name="description" content="Create cute windows and popups using the Kawaii Windows Generator for free. You can choose a design and edit the titles, messages and buttons. "/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/92a6ff382c.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="https://lovechan404.github.io/kawaii-windows/style.css" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="https://lovechan404.github.io/kawaii-windows/kawaii-window.css" crossorigin="anonymous">
-	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="kawaii-window.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://lovechan404.github.io/kawaii-windows/style.css" crossorigin="anonymous"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://lovechan404.github.io/kawaii-windows/kawaii-window.css" crossorigin="anonymous"> -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="kawaii-window.css">
 
 
 </head>
 <body>
 		<div class="display">
-			<div class="box-container d-sample" id="preview">
+			<section class="box-container d-sample" id="preview">
 				
 						<div class="title"> 
-							<h2>HTML + CSS</h2><h1> Kawaii Windows</h1>
+							<h1> Kawaii Windows Generator</h1>
+							<!-- <h2>HTML + CSS</h2> -->
 							<h2 class="subtitle">by lovechan404 </h2><br>
 						</div>
 				<div class="test lights-off" >
 					<div id="kawaii-window-save" style="padding:10px">
 						<div class="kawaii-window kawaii-a" >
 							<div class="kawaii-header"> 
-								<div id="window-title" class="window-title"> 11/2021 </div>
+								<div id="window-title" class="window-title"> Warning ⚠ </div>
 								<div class="btns"> 
-									<span> - </span><span id="close-window"> X </span>
+									<span id="control-min"> - </span><span id="control-x"> X </span>
 								</div>
 							</div>
 							<div class="message">
-								<h3 id="heading">Dear Love</h3>
-								<div class="message-content">It's been a tough year, but it was also fun. Thank you for being with me every step of the way. I wish you know how precious you are.</div>
+								<h3 id="heading">Do you want to cosplay as Hentai Kamen?</h3>
+								<div class="message-content" id="message-content">You will be subjected to multiple horrified stares. </div>
 								<div class="kawaii-button-box kb-right">
+									<button class="kawaii-button button-added"> Yes </button>
+									<button class="kawaii-button button-added"> No </button>
 								</div>
 							</div>
 						</div>
@@ -40,12 +44,8 @@
 				</div>
 				<br>
 				
-				<!-- <a href="#menu" class="scrollbtn" style="position: absolute;bottom: 30px;background: #fff;width: 100%;z-index: 99;right: 0;left: 0;">
-					<i class="fas fa-chevron-down"></i>
-				</a> -->
-			</div> 
-			<!-- <div class="w-100"></div> -->
-			<div class="box-container menu-container">
+			</section> 
+			<section class="box-container menu-container">
 					<div class="menu" id="menu">
 						<!-- <a href="#preview" class="scrollbtn" style=" position: sticky; top: 0; background: #ffa7a7; width: 100%; z-index: 99; ">
 							<i class="fas fa-chevron-up"></i>
@@ -61,37 +61,65 @@
 							</div><hr>
 						Window Title <br><br>
 							<div class="input-container">
-								<input type="text" name="" value="11/2021" placeholder="Write something" id="window-input">
+								<input type="text" name="" value="Warning ⚠" placeholder="Write something" id="window-input">
 								<span class="clear-input">X</span>
 							</div> 
 						<hr> 
 						Message Title <br><br>
 							<div class="input-container">
-								<input type="text" name="" value="Dear Love" placeholder="Write something" id="heading-input">
+								<input type="text" name="" value="Do you want to cosplay as Hentai Kamen?" placeholder="Write something" id="heading-input">
 								<span class="clear-input">X</span>
 							</div>
 						<hr> 
 						Message: <br><br>
 						<div class="input-container">
-							<textarea id="msg-input" placeholder="Write something">It's been a tough year, but it was also fun. Thank you for being with me every step of the way. I wish you know how precious you are.</textarea>
-							<span class="clear-input">X</span>
+							<textarea id="msg-input" placeholder="Write something">You will be subjected to multiple horrified stares. </textarea>
+							<div>
+								<span class="clear-input">X</span><br>
+								<span class="clear-input" id="text-copy"><i class="far fa-copy"></i></span><br>
+								<!-- <span class="clear-input" id="text-paste"><i class="far fa-clipboard"></i></span> -->
+							</div>
 						</div>
 						<hr>
-						Buttons (<i id="ttt">0</i>)<br>
+						Buttons (<i id="ttt">0</i>)<br><br>
 						<div class="control-group">
 						   <span id="addNewButton" >Add Button</span>
 						    <form id="inputs">
+						    	<input type="text" name="teamName[]" value="Yes"><span class="closeinput">X</span>
+						    	<input type="text" name="teamName[]" value="No"><span class="closeinput">X</span>
 						    </form>
-						 </div><br>
+						 </div>
+						 <hr>
+						 Toggle Control Buttons:<br><br>
+						 <div>
+						 		<span id="control-min-toggle" class="active">-</span>
+						 		<span id="control-x-toggle" class="active">X</span>
+						 </div>
+						 <hr>
+						 Author: <br><br>
+						 Hi friends! I'm lovechan, a BSIT student. I have worked on this project for a long time with trial and error. You are free to use  If you have any suggestion or problem, you can connect to me through the following:
+						 <br> <br>
+						 <a target="blank" href="https://www.facebook.com/lovechan404" title="Facebook"><i class="fab fa-facebook"></i></a>
+						 <a target="blank" href="https://github.com/lovechan404" title="Github"><i class="fab fa-github"></i></a>
+						 <a target="blank" href="https://www.linkedin.com/in/lovelybanaybanay/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+						 <br><br>
+						 You can help my studies by donating through: <br>
+						 GCASH: 09269515031 <br>
+						 Ko-Fi:<a target="blank" href="https://ko-fi.com/lovechan"> lovechan </a>
 						 <!-- <span class="btnbtn"> Generate HTML </span><br><br> -->
 						 <!-- <br><br><hr> -->
 						<!-- <span id="lights" class="clicked"> <i class="fas fa-lightbulb"></i> Lights (Beta) </span> -->
 						  <!-- <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'><br/> -->
 						  <!-- <span id="domdomdom">dom-to-image</span> -->
+						  <hr>
+						  License:
+						  <br>
+						  <p xmlns:cc="http://creativecommons.org/ns#" >Kawaii Windows Generator Project is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
+						  Click "generate image" to see the permissions for the materials generated from Kawaii Windows Generator.
 						</div>
 
 						<!-- <a href="#preview" class="scrollbtn"><i class="fas fa-chevron-up"></i></a>		 -->
-					</div>
+					</section>
 			
 		</div>
 		
@@ -100,9 +128,30 @@
   <!-- Modal content -->
   <div class="modal-content">
     <div class="image-buttons" id="image-buttons"><span class="close"> Close </span></div>
-    <div id="loader1"> <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div> </div>
-    <div id="preview-here"> </div>
+    <div id="preview-here">
+    <div id="loader1"> 
+    <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
   </div>
+    	<div id="generated-image"></div> 
+    	<div class="info-buttons">
+	    	<span id="donate-toggle"><i class="fas fa-donate"></i></span>
+	    	<span id="report-toggle"> <i class="fas fa-bug"></i> </span>
+	    	<div id="donate" style="display:none;">
+	    		Hi! I'm an IT student. You can help my studies by donating through: <br>
+					GCASH: 09269515031 <br>
+					Ko-Fi:<a target="blank" href="https://ko-fi.com/lovechan"> lovechan </a>
+	    	</div>
+	    	<div id="report" style="display:none;">
+	    		You can help me improve Kawaii Windows by reporting bugs, requesting features, asking questions and more. <br> 
+	    		 <a target="blank" href="https://m.me/lovechan404" title="Facebook Messenger"><i class="fab fa-facebook-messenger"></i></a>
+	    		 <a target="blank" href="mailto:lovelybanaybanay00@gmail.com" title="Facebook Messenger"><i class="fas fa-at"></i></a>
+	    		 <a href="https://github.com/lovechan404/kawaii-windows/issues" target="blank" title="Github"><i class="fab fa-github"></i> </a>
+	    	</div>
+    	</div>
+    </div>
+    <div class="credits">
+    	Kawaii Windows is FREE for everyone. <br>So, unless you added your own modification, please DO NOT make money out of my work. <br> Otherwise, you are free to use and edit it as much as you want. <br>
+    </div>
 
 </div>
 
@@ -111,4 +160,5 @@
 <script type="text/javascript" src="FileSaver.min.js"></script>
 <script type="text/javascript" src="dom-to-image-dev.min.js" /></script>
 <script type="text/javascript" src="script.js?v=1.1"></script>
+
 </html>

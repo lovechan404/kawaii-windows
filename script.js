@@ -45,13 +45,41 @@ $(document).ready(function() {
 		$(".test > div > div").addClass('kawaii-window kawaii-e');
 		$("#window-name").html("VIP");
 	});
+	$( "#control-min-toggle" ).click(function() {
+			$(this).toggleClass("active not-active");
+			$( "#control-min").toggle();
+	});
+	$( "#control-x-toggle" ).click(function() {
+			$(this).toggleClass("active not-active");
+			$( "#control-x").toggle();
+	});
+	$( "#donate-toggle" ).click(function() {
+			$(this).toggleClass("active not-active");
+			$( "#donate").toggle();
+			$( "#report").hide();
+	});
+	$( "#report-toggle" ).click(function() {
+			$(this).toggleClass("active not-active");
+			$( "#report").toggle();
+			$( "#donate").hide();
+	});
+	$( "#text-copy" ).click(function() {
+			
+			/* Get the text field */
+		  var copyText = document.getElementById("msg-input");
+
+		  /* Select the text field */
+		  copyText.select();
+		  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+		  /* Copy the text inside the text field */
+		  navigator.clipboard.writeText(copyText.value);
+	});
 
 	$('#lights').click(function () {
 		$('.test').toggleClass("lights-on lights-off"); //you can list several class names 
 		$('#lights').toggleClass("active a");
 	});
-
-
 
 
 
@@ -90,7 +118,7 @@ $(document).ready(function() {
 	    $('.test .kawaii-button-box').append('<button class="kawaii-button button-added">' + randBtn +  '</button>');
 
 
-	    $("#inputs").append(elem).append(removeLink);
+	  $("#inputs").append(elem).append(removeLink);
 		$('#ttt').html($( ".closeinput" ).length);
 
 		});
@@ -164,15 +192,15 @@ var modal = document.getElementById("myModal");
 	        var img = new Image();
 	        img.src = dataUrl;
 
-    			document.getElementById('preview-here').innerHTML ='';
+    			document.getElementById('generated-image').innerHTML ='';
 	        setTimeout(function(){$('#loader1').fadeOut('fast');},1000);
-	        setTimeout(function(){document.getElementById('preview-here').appendChild(img);},1000);
+	        setTimeout(function(){document.getElementById('generated-image').appendChild(img);},1000);
 
 	        var link = document.createElement('a');
         	link.download = 'kawaii-window.png';
         	link.href = dataUrl;
-        	link.innerText = "Download";
-        	setTimeout(function(){document.getElementById('preview-here').appendChild(link);},1000);
+        	link.innerText = "Download PNG";
+        	setTimeout(function(){document.getElementById('generated-image').appendChild(link);},1000);
 	    })
 	    .catch(function (error) {
 	        console.error('oops, something went wrong!', error);
