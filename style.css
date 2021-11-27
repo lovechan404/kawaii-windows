@@ -218,10 +218,13 @@ span.close i {
 	background: #fff;
   padding: 15px 35px;
   max-width: 300px;
-  margin: 15px;
   margin-top: 20px;
   border-radius: 999px;
-  box-shadow: 11px 6px 11px rgb(0 0 0 / 20%);
+  box-shadow: 1px 3px 11px rgb(231 165 164);
+  position: absolute;
+		top: 40px;
+    left: 0;
+    right: 0;
 }
 .menu span.active {
 	background: #fee;
@@ -293,12 +296,11 @@ span.close i {
 .modal-content {
 	position: relative;
 	width: fit-content;
-  margin: auto;
-  margin-top: 10px;
+  margin: 15px auto;
   text-align: center;
   min-height: 70vh;
-  max-width: 85vw;
-  padding: 30px;
+	max-width: 80%;
+	padding: 15px;
   background: #fff;
   border: 5px solid #bf6666;
   color: #bf6666;
@@ -313,7 +315,7 @@ span.close i {
 		margin: 15px auto;
 		min-height: 300px;
 		text-align: center;
-		padding: 50px 0;
+		padding: 15px;
 		position: relative;
 	}
 body {
@@ -582,13 +584,13 @@ body {
     margin: 10px auto;
     text-align: center;
     min-height: 70vh;
-    max-width: 80vw;
+    max-width: 580px;
 	}
 	#preview-here {
 		margin: 20 auto;
 		margin-top: 20px;
 		min-height: 200px;
-		width: 600px;
+		width: 520px;
 		text-align: center;
 		padding: 30px;
 	}
