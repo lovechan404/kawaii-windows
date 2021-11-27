@@ -11,17 +11,47 @@
 	<!-- <link rel="stylesheet" type="text/css" href="https://lovechan404.github.io/kawaii-windows/kawaii-window.css" crossorigin="anonymous"> -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="kawaii-window.css">
-
+	<style type="text/css">.wrap {
+		width: 100%;
+	  position: relative;
+	  padding: 160px 0 0 0;
+	
+	}
+	
+		#port {
+			background: rgb(47, 49, 52);
+			margin: 0 auto;
+			
+			overflow: hidden;
+			position: relative;
+			width: 1088px;
+			height: 640px;
+			margin-bottom: 22px;
+			
+		}</style>
 
 </head>
 <body>
 		<div class="display">
 			<section class="box-container d-sample" id="preview">
-				
+				<div class="div-scroll">
+				<div id="clouds">
+
+					<div class="cloud x2"></div>
+					<div class="cloud x3"></div>
+					<div class="cloud x5"></div>
+					<div><div></div><div></div></div>
+				</div>
+				<!-- <div id="clouds2">
+					<div class="cloud x1"></div>
+					<div class="cloud x4"></div>
+				</div> -->
+
 						<div class="title"> 
 							<h1> Kawaii Windows Generator</h1>
 							<!-- <h2>HTML + CSS</h2> -->
-							<h2 class="subtitle">by lovechan404 </h2><br>
+							<h2 class="subtitle">by lovechan404 </h2>
+							<div class="a-line1"></div><div class="a-line2"></div>
 						</div>
 				<div class="test lights-off" >
 					<div id="kawaii-window-save" style="padding:10px">
@@ -33,8 +63,8 @@
 								</div>
 							</div>
 							<div class="message">
-								<h3 id="heading">Do you want to cosplay as Hentai Kamen?</h3>
-								<div class="message-content" id="message-content">You will be subjected to multiple horrified stares. </div>
+								<h3 id="heading">Do you want to cosplay as Freddie Mercury wearing Sailor Mercury costume?</h3>
+								<div class="message-content" id="message-content">You might win an award. </div>
 								<div class="kawaii-button-box kb-right">
 									<button class="kawaii-button button-added"> Yes </button>
 									<button class="kawaii-button button-added"> No </button>
@@ -42,9 +72,56 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<br>
+					</div>
+					<br><br><br>
+					<div class="a-container">
+					  <div class="a-rooftop"></div>
+					  <div class="a-building">
+					    <div class="a-line-a"></div>
+					    <div class="a-windows">
+					      <div class="a-ss">
+					        <div></div>
+					        <div></div>
+					      </div>
+					      <div class="a-s">
+					        <div></div>
+					        <div></div>
+					      </div>
+					       <div class="a-aircon"></div>
+					      <div class="a-ss">
+					        <div></div>
+					        <div></div>
+					      </div>
+					      <div class="a-ssss">
+					        <div></div>
+					        <div></div>
+					      </div>
+					      <div class="a-aircon"></div>
+					      <div class="a-s">
+					        <div></div>
+					        <div></div>
+					      </div>
+					      <div class="a-sss">
+					        <div></div>
+					        <div></div>
+					      </div>
+					      <div class="a-aircon"></div>
+
+					      <div class="a-ssss">
+					        <div></div>
+					        <div></div>
+					      </div>
+					      <div class="a-ss">
+					        <div></div>
+					        <div></div>
+					      </div>
+					      <div class="a-aircon"></div>
+					    </div>
+					  </div>
+					</div>
+
 				
+			</div>
 			</section> 
 			<section class="box-container menu-container">
 					<div class="menu" id="menu">
@@ -68,13 +145,13 @@
 						<hr> 
 						Message Title <br><br>
 							<div class="input-container">
-								<input type="text" name="" value="Do you want to cosplay as Hentai Kamen?" placeholder="Write something" id="heading-input">
+								<input type="text" name="" value="Do you want to cosplay as Freddie Mercury wearing Sailor Mercury costume?" placeholder="Write something" id="heading-input">
 								<span class="clear-input">X</span>
 							</div>
 						<hr> 
 						Message: <br><br>
 						<div class="input-container">
-							<textarea id="msg-input" placeholder="Write something">You will be subjected to multiple horrified stares. </textarea>
+							<textarea id="msg-input" placeholder="Write something">You might win an award. </textarea>
 							<div>
 								<span class="clear-input">X</span><br>
 								<span class="clear-input" id="text-copy"><i class="far fa-copy"></i></span><br>
@@ -126,7 +203,7 @@
 
   <!-- Modal content -->
   <div class="modal-content">
-    <div class="image-buttons" id="image-buttons"><span class="close"> Close </span></div>
+    <div class="image-buttons" id="image-buttons"><span class="close"> <i class="fas fa-times"></i> </span></div>
     <div id="preview-here">
     <div id="loader1"> 
     <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
@@ -141,15 +218,16 @@
 					Ko-Fi:<a target="blank" href="https://ko-fi.com/lovechan"> lovechan </a>
 	    	</div>
 	    	<div id="report" style="display:none;">
-	    		You can help me improve Kawaii Windows by reporting bugs, requesting features, asking questions and more. <br> 
-	    		 <a target="blank" href="https://m.me/lovechan404" title="Facebook Messenger"><i class="fab fa-facebook-messenger"></i></a>
-	    		 <a target="blank" href="mailto:lovelybanaybanay00@gmail.com" title="Email"><i class="fas fa-at"></i></a>
+	    		You can help me improve Kawaii Windows by reporting bugs, requesting features, asking questions and more through: <br> 
+	    		 <a target="blank" href="https://m.me/lovechan404" title="Facebook Messenger"><i class="fab fa-facebook-messenger"></i></a>  &nbsp&nbsp&nbsp
+	    		 <a target="blank" href="mailto:lovelybanaybanay00@gmail.com" title="Email"><i class="fas fa-at"></i></a> &nbsp&nbsp&nbsp
 	    		 <a href="https://github.com/lovechan404/kawaii-windows/issues" target="blank" title="Github"><i class="fab fa-github"></i> </a>
 	    	</div>
     	</div>
     </div>
     <div class="credits">
-    	Kawaii Windows is FREE for everyone. <br>So, unless you added your own modification, please DO NOT make money out of my work. <br> Otherwise, you are free to use and edit it as much as you want. <br>
+    	Free for personal and commercial use but please DO NOT sell the original generated image without modification. <br> 
+    	Attribution is not required but always appreciated.
     </div>
 
 </div>
@@ -159,5 +237,4 @@
 <script type="text/javascript" src="FileSaver.min.js"></script>
 <script type="text/javascript" src="dom-to-image-dev.min.js" /></script>
 <script type="text/javascript" src="script.js?v=1.1"></script>
-
 </html>

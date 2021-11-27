@@ -55,12 +55,12 @@ $(document).ready(function() {
 	});
 	$( "#donate-toggle" ).click(function() {
 			$(this).toggleClass("active not-active");
-			$( "#donate").toggle();
+			$( "#donate").slideToggle( "slow" );
 			$( "#report").hide();
 	});
 	$( "#report-toggle" ).click(function() {
 			$(this).toggleClass("active not-active");
-			$( "#report").toggle();
+			$( "#report").slideToggle( "slow" );
 			$( "#donate").hide();
 	});
 	$( "#text-copy" ).click(function() {

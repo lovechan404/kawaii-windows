@@ -124,7 +124,7 @@ h3 {
 		transform: translateY(2px);
 		box-shadow: 1px 1px 0 #7d3434;
 	}
-	.kawaii-a .kawaii-button {
+	.kawaii-a .kawaii-button { 
 		background: #bf6666;
 		border-radius: 4px;
 	    color: #fff;
@@ -145,28 +145,43 @@ h3 {
 /*kawaii b*/
 
 	.kawaii-b {
-		/*font-family: 'VCR_OSD_MONO', sans-serif;*/
 		box-sizing: border-box;
-		border-radius: 3px;
-		background: #ef9393;
-		color: #fff;
-
-		/*background-image: url('pink_sunset_by_itsendy_de05el9-fullview.jpg') ;*/
+		border-radius: 0px;
+		background: #e18880;
+		color: #e18880;
 		background-position: center;
 		background-size: cover;
 	}
 	.kawaii-b .message {
 		padding: 0 15px;
-		padding-bottom: 15px;
-		/*text-shadow: 1px 1px 2px #000;*/
-		font-size: 19px;
+		font-size: 19px; 
+		font-weight: normal;
+		background: #ffd0d0;
+		color: #e18880;
+		border: 2px solid #e18880;
+		border-top: none;
 	}
 	.kawaii-b .kawaii-header{
 		border-radius:  0;
 		padding: 5px 15px 8px 15px;
+		background: #ffd0d0;
+		border: 2px solid #e18880;
+		/*border-bottom: none;*/
+		color: #e18880;
+
+	}
+	.kawaii-b #heading {
+		margin:  0;
+		padding-top: 30px;
+		margin-bottom: 15px;
+		line-height: 1;
+		font-size: 1.3em;
+	}
+	.kawaii-b .message-content {
+		margin-bottom: 30px;
 	}
 	.kawaii-b .window-title {
-		color: #fee;
+		color: #e18880;
 	}
 	.kawaii-b .btns span {
 		height: auto;
@@ -177,22 +192,22 @@ h3 {
 	.kawaii-b .btns span:active{
 		transform: scale(.98);
 	}
-	.kawaii-b {
-		font-weight: normal;
+	.kawaii-b .kawaii-button-box {
+		margin: 0 -15px 0 -15px;
+		background: #ffd0d0;
+		width: 100%;
+		padding: 10px 15px;
+		text-align: right;
 	}
 	.kawaii-b .kawaii-button {
 		border-radius: 0px;
-		border-radius: 3px;
-		background: #fff;
-		color: #c765a7;	
-		margin-top: 5px;
+		background: #fee;
+		color: #e18880;	
+		border: 2px solid #e18880;
+		padding: 2px;
 	}
 	.kawaii-b h3 {
 		font-weight: normal;
-	}
-	.kawaii-b .secondary-button {
-	border: 2px solid #b66666;
-	color: #b66666!important;
 	}
 	
 /*end kawaii b*/
