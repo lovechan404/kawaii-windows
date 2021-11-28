@@ -273,6 +273,7 @@ span.close i {
 	background: #fff;
 	padding: 6px 15px;
 	border:  none;
+	display: block;
 }
 .amazingbtn:hover, .btnbtn:hover, .menu span.active, .menu > div span:hover{
 	opacity: .85;
@@ -293,13 +294,14 @@ span.close i {
 	background: #fff;
   padding: 15px 35px;
   max-width: 300px;
+  margin: auto;
   margin-top: 20px;
   border-radius: 999px;
   box-shadow: 1px 3px 11px rgb(231 165 164);
   position: absolute;
 		top: 40px;
-    left: 0;
-    right: 0;
+		right: 0;
+		left: 0;
 }
 .menu span.active {
 	background: #fee;
@@ -677,14 +679,16 @@ body {
 	#donate {
 		position: absolute;
 		top: 33px;
-    left: -97px;
+    left: -113px;
+    right: auto;
 		width: 280px;
     border-radius: 999px 0 999px 999px ;
 	}
 	#report {
 		position: absolute;
 		top: 33px;
-    right: -97px;
+    right: -113px;
+    left: auto;
 		width: 280px;
     border-radius: 0 999px 999px 999px ;
 	}
