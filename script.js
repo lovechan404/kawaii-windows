@@ -296,6 +296,11 @@ var audio = new Audio();
 audio.src = source;
 audio.autoplay = true; 
 audio.loop = true;
+audio.addEventListener("load", function() {
+  audio.play();
+  $("#pauseBtn").show();
+  $('#playBtn').hide();
+}, true);
 
 $("#playBtn").click(function() {
   audio.play();
