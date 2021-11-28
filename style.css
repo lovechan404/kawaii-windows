@@ -123,14 +123,84 @@ i {
 }
 .title {
 	position: relative;
-  margin: 15px;
+  margin: 15px auto;
   padding: 5px;
   background: #fff;
   border: 5px solid #bf6666;
   color: #bf6666;
   border-radius: 3px;
   box-shadow: 7px 7px 0 #7d343455;
+  max-width: 400px;
 }
+#music-settings{
+	position: absolute;
+    top: 15px;
+    right: -20px;
+    background: #fff;
+    padding: 6px 9px;
+    border: 2px solid #bf6666;
+    border-radius: 50px;
+    z-index: 120;
+    cursor: pointer;
+}
+#music-controls {
+		display: none;
+	  position: absolute;
+    background: #bf6666;
+    color: #fff!important;
+    top: 27px;
+    right: -20px;
+    padding: 6px 6px;
+    width: 39px;
+    border-radius: 50px;
+    border: 2px solid #bf6666;
+    z-index: 119;
+    padding-top: 28px;
+    box-sizing: border-box;
+}
+#music-controls i, #share-controls i, #share-controls span {
+    color: #fff;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin:  5px 0;
+    cursor: pointer;
+}
+#share-controls span {
+	font-size: 9px;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	padding: 5px 0;
+}
+#share-settings{
+	position: absolute;
+    top: 15px;
+    left: -20px;
+    background: #fff;
+    padding: 6px 10px;
+    border: 2px solid #bf6666;
+    border-radius: 50px;
+    z-index: 118;
+    cursor: pointer;
+}
+
+#share-controls {
+		display: none;
+	  position: absolute;
+    background: #bf6666;
+    color: #fff!important;
+    top: 27px;
+    left: -20px;
+    padding: 6px 6px;
+    width: 39px;
+    border-radius: 50px;
+    border: 2px solid #bf6666;
+    z-index: 117;
+    padding-top: 28px;
+    box-sizing: border-box;
+}
+
+
 .title .subtitle {
 	font-family: 'Patrick Hand';
 	display: block;
@@ -307,6 +377,7 @@ span.close i {
   border-radius: 3px;
   box-shadow: 7px 7px 0 #7d343455;
 }
+
 #preview-here {
 		background-image: url('https://images.unsplash.com/photo-1551499779-ee50f1aa4d25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80') ;
 		background-color: #fee;

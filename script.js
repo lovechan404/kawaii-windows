@@ -241,7 +241,30 @@ var modal = document.getElementById("myModal");
 	    .catch(function (error) {
 	        console.error('oops, something went wrong!', error);
 	    });
-});
+
+		});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 var modal = document.getElementById("myModal");
@@ -268,4 +291,84 @@ window.onclick = function(event) {
   }
 }
 
+var source = "https://lovechan404.github.io/kawaii-windows/bgmusic.mp3";
+var audio = new Audio(); 
+audio.src = source;
+audio.autoplay = true; 
+audio.loop = true;
 
+$("#playBtn").click(function() {
+  audio.play();
+  $("#pauseBtn").show();
+  $('#playBtn').hide();
+});
+
+$("#pauseBtn").click(function() {
+  audio.pause();
+  $("#playBtn").show();
+  $('#pauseBtn').hide();
+});
+
+$("#stopBtn").click(function() {
+  audio.pause();
+  audio.currentTime = 0;
+  $("#playBtn").show();
+  $('#pauseBtn').hide();
+});
+
+$("#music-settings").click(function() {
+  $("#music-controls").slideToggle();
+  $("#share-controls").slideUp();
+});
+$("#share-settings").click(function() {
+  $("#share-controls").slideToggle();
+  $("#music-controls").slideUp();
+
+});
+
+
+
+	$( "#amazingbtn2" ).click(function(){
+		// Get the modal
+		// $("#kawaii-window-save").css("transform", "scale(2)");
+var modal = document.getElementById("myModal");
+
+  modal.style.display = "block";
+
+	var node = document.getElementById('kawaii-window-save');
+	var scale = 3;
+	var style = {
+    transform: 'scale('+scale+')',
+    transformOrigin: 'top left',
+    width: node.offsetWidth  + "px",
+     height: node.offsetHeight  + "px"
+	}
+	var param = {
+     height: node.offsetHeight * scale,
+     width: node.offsetWidth * scale ,
+      quality: 1,
+     style
+	}
+	function filter (node) {
+    return (node.tagName !== 'i');
+}
+
+domtoimage.toSvg(node, {filter: filter})
+    .then(function (dataUrl) {
+        var img = new Image();
+	        img.src = dataUrl;
+
+    			document.getElementById('generated-image').innerHTML ='';
+	        setTimeout(function(){$('#loader1').fadeOut('fast');},1000);
+	        setTimeout(function(){document.getElementById('generated-image').appendChild(img);},1000);
+
+	        var link = document.createElement('a');
+        	link.download = 'kawaii-window.svg';
+        	link.href = dataUrl;
+        	link.innerText = "Download SVG";
+        	setTimeout(function(){document.getElementById('generated-image').appendChild(link);},1000);
+	    })
+	    .catch(function (error) {
+	        console.error('oops, something went wrong!', error);
+	    });
+});
