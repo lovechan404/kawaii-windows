@@ -4,15 +4,20 @@
   font-weight: 400;
   font-display: block;
   src: local('Patrick Hand'), url("font/PatrickHand-Regular.ttf") format("truetype");
-
 }
-
 @font-face {
   font-family: VCR_OSD_MONO;
   font-style: normal;
   font-weight: 400;
   font-display: block;
   src: local('VCR_OSD_MONO'), local('VCR OSD MONO'), url("font/VCR_OSD_MONO.ttf") format("truetype");
+}
+@font-face {
+  font-family: Fredoka;
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("font/FredokaOne-Regular.ttf") format("truetype");
 }
 body {
 	

@@ -216,26 +216,75 @@ h3 {
 
 	.kawaii-c {
 		box-sizing: border-box;
-		border-radius: 5px;
-		background: #fff;
-		border: 5px solid #ffa7a7;
+		background: transparent;
+		border: none;
 		color: #ffa7a7;
+		font-family: "Fredoka";
+		font-weight: normal;
+		position: relative;
 	}
 	.kawaii-c .kawaii-header{
 		border-radius:  0;
-		padding: 0 5px;
+		padding: 0 15px;
+		border: 5px solid #ffa7a7;
+		border-radius: 20px 20px 0 0;
+		color: #ffa7a7;
+		background: #fff;
+	}
+	.kawaii-c #heading {
+		margin:  0;
+		padding-top: 30px;
+		margin-bottom: 15px;
+		line-height: 1;
+		font-size: 1.3em;
+		z-index: 3;
+	}
+	.kawaii-c .message {
+		border: 5px solid #ffa7a7;
+		border-top: none;
+		background: #fff;
+		z-index: 0;
+		padding: 0 15px;
+		border-radius: 0 0 20px 20px;
+	}
+	.kawaii-c .message-content {
+		margin-bottom: 30px;
+	}
+	.kawaii-c .window-title {
+		color: #ffa7a7;
+	}
+	.kawaii-c .btns span {
+		height: auto;
+		width: auto;
+		padding: 2px 5px;
+		margin-left: 5px;
+	}
+	.kawaii-c .btns span:active{
+		transform: scale(.98);
+	}
+	.kawaii-c .kawaii-button {
+		border-radius: 20px;
+		background: #fee;
+		color: #ffa7a7;	
+		border: 2px solid #ffa7a7;
+		padding: 2px;
+		font-family: "Fredoka";
+	}
+	.kawaii-c h3 {
+		font-weight: normal;
+	}
+	.kawaii-c:after {
+	    content: "";
+		position: absolute; 
 		background: #ffa7a7;
-		border-bottom: 5px solid #ffa7a7;
-		color: #fff;
+		width: 40px;
+		height: 50px;
+		z-index: -1;
+		position: absolute; top: -20px; left: 30px;
+		border-radius: 100px;
+		-moz-border-radius: 100px;
+		-webkit-border-radius: 100px;
 	}
 
-	.kawaii-c .kawaii-button {
-		background: #ffa7a7;
-		border-radius: 4px;
-	    color: #fff;
-	}
-	.kawaii-c .secondary-button {
-	border: 2px solid #ffa7a7;
-	color: #ffa7a7!important;
-	}
+
 /*end kawaii c*/

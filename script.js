@@ -63,18 +63,18 @@ $(document).ready(function() {
 			$( "#report").slideToggle( "slow" );
 			$( "#donate").hide();
 	});
-	$( "#text-copy" ).click(function() {
+	// $( "#text-copy" ).click(function() {
 			
-			/* Get the text field */
-		  var copyText = document.getElementById("msg-input");
+	// 		/* Get the text field */
+	// 	  var copyText = document.getElementById("msg-input");
 
-		  /* Select the text field */
-		  copyText.select();
-		  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+	// 	  /* Select the text field */
+	// 	  copyText.select();
+	// 	  copyText.setSelectionRange(0, 99999); /* For mobile devices */
 
-		  /* Copy the text inside the text field */
-		  navigator.clipboard.writeText(copyText.value);
-	});
+	// 	  /* Copy the text inside the text field */
+	// 	  navigator.clipboard.writeText(copyText.value);
+	// });
 
 	$('#lights').click(function () {
 		$('.test').toggleClass("lights-on lights-off"); //you can list several class names 
