@@ -12,7 +12,7 @@ Check it here: https://lovechan404.github.io/kawaii-windows/
 ![image](https://user-images.githubusercontent.com/69886523/143730807-060331ac-e2b3-4583-9e03-9f89ee826eab.png)
 
 # License
-Kawaii Windows Generator Project is licensed under CC BY-NC 4.0
+Kawaii Windows Generator Project is licensed under GNU General Public License v2.0.
 Materials generated from Kawaii Windows Generator are free for personal and commercial use, but selling without modification is not allowed.
 
 
