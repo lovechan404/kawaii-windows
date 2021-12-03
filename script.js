@@ -294,8 +294,9 @@ window.onclick = function(event) {
 var source = "https://lovechan404.github.io/kawaii-windows/bgmusic.mp3";
 var audio = new Audio(); 
 audio.src = source;
-audio.autoplay = true; 
+// audio.autoplay = true; 
 audio.loop = true;
+
 audio.addEventListener("load", function() {
   audio.play();
   $("#pauseBtn").show();
