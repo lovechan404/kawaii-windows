@@ -742,10 +742,13 @@ body {
 	width: 194px!important;
 	border-radius: 5px;
 	padding: 6px 10px;
-	min-height: 160px;
+	min-height: 60px;
 	background: #fee;
   color: #bf6666;
   font-size: 14px;
+}
+#msg-input {
+	min-height: 160px;
 }
 .clear-input {
 	/*float: right;*/
