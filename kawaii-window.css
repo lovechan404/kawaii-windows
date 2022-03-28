@@ -18,11 +18,8 @@
 	opacity: .9;
 }
 .kawaii-button:active {
-	transform: translateY(3px);
-}
-.kawaii-window .secondary-button {
-	background: transparent!important;
-	box-sizing: border-box;
+	transform: translateY(1px);
+	box-shadow: 0 0 0 ;
 }
 .message #heading {
 	white-space: pre-wrap;
@@ -107,7 +104,7 @@ h3 {
 		border-bottom: 1px solid #bf6666;
 	}
 	.kawaii-a .window-title {
-		color: #fee;
+		color: #fff;
 		text-shadow: 1px 1px 0 #7d3434;
 	}
 	.kawaii-a .btns span {
@@ -124,8 +121,7 @@ h3 {
 		transform: translateY(2px);
 		box-shadow: 1px 1px 0 #7d3434;
 	}
-	.kawaii-a .kawaii-button { 
-		background: #bf6666;
+	.kawaii-a .kawaii-button {
 		border-radius: 4px;
 	    color: #fff;
 	    border: 1px solid #bf6666;
@@ -264,8 +260,8 @@ h3 {
 		border-radius: 20px;
 		color: #fff;	
 		background: #ffa7a7;
-		border: 2px solid #ffa7a7;
-		padding: 6px 2px;
+		border: 5px solid #ffa7a7;
+		padding: 2px 2px;
 		font-family: "Fredoka";
 	}
 	.kawaii-c h3 {
@@ -297,3 +293,147 @@ h3 {
 	}
 
 /*end kawaii c*/
+
+/*kawaii d*/
+
+	.kawaii-d {
+		margin-top: 20px;
+		box-sizing: border-box;
+		background: transparent;
+		border: none;
+		color: #454545;
+		font-family: "OpenSans Condensed";
+		font-weight: normal;
+		position: relative;
+	}
+	.kawaii-d .kawaii-header{
+		border-radius:  0;
+		padding: 7px 15px;
+		border: 1px solid #454545;
+		color: #454545;
+		background: #ffa7a7;
+	}
+	.kawaii-d #heading {
+		margin:  0;
+		padding-top: 30px;
+		margin-bottom: 15px;
+		line-height: 1;
+		font-size: 1.3em;
+		z-index: 3;
+	}
+	.kawaii-d .message {
+		border: 1px solid #454545;
+		border-top: none;
+		background: #fff;
+		z-index: 0;
+		padding: 0 15px;
+		border-radius: 0;
+	}
+	.kawaii-d .message-content {
+		margin-bottom: 30px;
+	}
+	.kawaii-d .btns span {
+		height: auto;
+		width: auto;
+		padding: 0 8px;
+		margin-left: 5px;
+		border: 3px double #454545;
+		box-shadow: 0 2px 0;
+		background: #eee;
+		font-size: .8em;
+	}
+	.kawaii-d .btns span:active{
+		transform: scale(.98);
+	}
+	.kawaii-d .kawaii-button {
+		color: #454545;	
+		background: #eee;
+		border: 3px double #454545;
+		padding: 1px 6px;
+		font-family: "OpenSans Condensed";
+		box-shadow: 0 2px 0;
+	}
+	.kawaii-d h3 {
+		font-weight: normal;
+	}
+
+/*end kawaii d*/
+
+
+
+/*kawaii e*/
+
+	.kawaii-e {
+		margin-top: 20px;
+		box-sizing: border-box;
+		background: #fff;
+		border: none;
+		color: #ffa7a7;
+		font-family: "Poppins";
+		font-weight: normal;
+		position: relative;
+		overflow: hidden;
+		border-radius: 50px;
+		padding: 15px;
+		border: 1px solid #ffa7a7;
+	}
+	.kawaii-e .kawaii-header{
+		color: #ffa7a7;
+	}
+	.kawaii-e #heading {
+		margin:  0;
+		padding-top: 0;
+		margin-bottom: 15px;
+		line-height: 1.2;
+		font-size: 1.3em;
+		z-index: 3;
+		font-weight: bold;
+	}
+	.kawaii-e .window-title, .kawaii-e #control-min {
+		display: none;
+	}
+	.kawaii-e .message {
+		text-align: center;
+		border-top: none;
+		z-index: 0;
+		padding: 15px;
+	}
+	.kawaii-e .message-content {
+		margin-bottom: 30px;
+	}
+	.kawaii-e .btns {
+		margin: auto;
+		text-align: center;
+	}
+	.kawaii-e .btns span {
+		box-sizing: border-box;
+		height: 23px;
+		width: 23px;
+		padding: 2px 7px;
+		color: #fff;
+		font-size: 13px;
+		background: #ffa7a7;
+		border-radius: 20px;
+	}
+	.kawaii-e .btns span:active{
+		transform: scale(.98);
+	}
+	.kawaii-e .kawaii-button-box  {
+		margin: auto;
+		text-align: center;
+		border-top: 1px solid #ffa7a7;
+		width: 100%;
+	}
+	.kawaii-e .kawaii-button {
+		border-radius: 20px;
+		color: #ffa7a7;	
+		background: transparent;
+		border: none;
+		margin: 5px 5px 0 5px;
+		font-family: "Poppins";
+	}
+	.kawaii-e h3 {
+		font-weight: normal;
+	}
+
+/*end kawaii e*/

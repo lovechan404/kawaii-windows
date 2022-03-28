@@ -1,0 +1,82 @@
+body.purple,
+body.purple .menu span.active,
+body.purple #preview-here,
+body.purple #inputs input, 
+body.purple #heading-input, 
+body.purple #window-input,
+body.purple .menu textarea,
+body.purple .d-sample::-webkit-scrollbar-track,
+body.purple textarea::-webkit-scrollbar-track{
+        background: #faf4fb;
+    }
+body.purple,
+body.purple a, 
+body.purple .title,
+body.purple .menu span, 
+body.purple #generated-image a,
+body.purple span.close,
+body.purple .scrollbtn,
+body.purple .modal-content,
+body.purple .mini-menu-mobile a, 
+body.purple #go-to-preview,
+body.purple .mini-menu-desktop button,
+body.purple .mini-menu-desktop button:hover, 
+body.purple .mini-menu-desktop button:active,
+body.purple #inputs input, 
+body.purple #heading-input, 
+body.purple #window-input,
+body.purple .menu textarea {
+    color: #7d5f89;
+}
+body.purple .menu,
+body.purple .a-line-a,
+body.purple .menu-container,
+body.purple .mini-menu-desktop button:hover, 
+body.purple .mini-menu-desktop button:active {
+    background: #c3a9cd;
+}
+body.purple .mini-menu-desktop button:hover, 
+body.purple .mini-menu-desktop button:active,
+body.purple #inputs input, 
+body.purple #heading-input, 
+body.purple #window-input,
+body.purple .menu textarea,
+body.purple #music-settings,
+body.purple #music-controls ,
+body.purple #share-settings,
+body.purple #share-controls,
+body.purple .menu span, 
+body.purple #generated-image a{
+    border: 2px solid #7d5f89;
+}
+body.purple .menu span,
+body.purple #generated-image a {
+    background: #c294d1;
+}
+body.purple .a-rooftop,
+body.purple .a-building,
+body.purple ::-webkit-scrollbar-thumb,
+body.purple ::-webkit-scrollbar-thumb:hover,
+body.purple .a-line1,
+body.purple .a-line2,
+body.purple #music-controls,
+body.purple #share-controls{
+    background: #7d5f89;
+}
+body.purple .title,
+body.purple .modal-content,
+body.purple span.close{
+    border: 5px solid #7d5f89;
+}
+body.purple . title {
+    box-shadow: 7px 7px 0 #00000025;
+}
+body.purple .menu hr {
+    border-bottom: 3px dotted #7d5f89;
+}
+@media (min-width: 768px) {
+    body.purple .menu{
+        box-shadow: inset 2px 0px 11px 0 #7d5f89;
+    }
+}
+

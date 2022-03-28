@@ -1,0 +1,86 @@
+body.sunset,
+body.sunset .menu span.active,
+body.sunset #preview-here,
+body.sunset #inputs input, 
+body.sunset #heading-input, 
+body.sunset #window-input,
+body.sunset .menu textarea,
+body.sunset .d-sample::-webkit-scrollbar-track,
+body.sunset textarea::-webkit-scrollbar-track{
+        background: #fff6e5;
+    }
+body.sunset,
+body.sunset a, 
+body.sunset .title,
+body.sunset .menu span, 
+body.sunset #generated-image a,
+body.sunset span.close,
+body.sunset .scrollbtn,
+body.sunset .modal-content,
+body.sunset .mini-menu-mobile a, 
+body.sunset #go-to-preview,
+body.sunset .mini-menu-desktop button,
+body.sunset .mini-menu-desktop button:hover, 
+body.sunset .mini-menu-desktop button:active,
+body.sunset #inputs input, 
+body.sunset #heading-input, 
+body.sunset #window-input,
+body.sunset .menu textarea {
+    color: #d18d47;
+}
+body.sunset .menu,
+body.sunset .a-line-a,
+body.sunset .menu-container,
+body.sunset .mini-menu-desktop button:hover, 
+body.sunset .mini-menu-desktop button:active {
+    background: #fdd17d;
+}
+body.sunset .mini-menu-desktop button:hover, 
+body.sunset .mini-menu-desktop button:active,
+body.sunset #inputs input, 
+body.sunset #heading-input, 
+body.sunset #window-input,
+body.sunset .menu textarea,
+body.sunset #music-settings,
+body.sunset #music-controls ,
+body.sunset #share-settings,
+body.sunset #share-controls,
+body.sunset .menu span, 
+body.sunset #generated-image a{
+    border: 2px solid #d18d47;
+}
+body.sunset .menu span,
+body.sunset #generated-image a {
+    background: #efc474;
+}
+body.sunset .a-rooftop,
+body.sunset .a-building,
+body.sunset ::-webkit-scrollbar-thumb,
+body.sunset ::-webkit-scrollbar-thumb:hover,
+body.sunset .a-line1,
+body.sunset .a-line2,
+body.sunset #music-controls,
+body.sunset #share-controls{
+    background: #d18d47;
+}
+{
+    background-color: #9d652c;
+}
+body.sunset .title,
+body.sunset .modal-content,
+body.sunset span.close{
+    border: 5px solid #d18d47;
+}
+body.sunset . title {
+    box-shadow: 7px 7px 0 #00000025;
+}
+body.sunset .menu hr {
+    border-bottom: 3px dotted #d18d47;
+}
+@media (min-width: 768px) {
+    body.sunset .menu{
+        box-shadow: inset 2px 0px 11px 0 #d18d47;
+    }
+}
+
+

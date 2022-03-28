@@ -1,0 +1,211 @@
+/*purple*/
+	body.purple .kawaii-a,
+	body.purple .kawaii-a .kawaii-button {
+		color: #7d5f89;
+	}
+	body.purple .kawaii-a,
+	body.purple .kawaii-a .btns span,
+	body.purple .kawaii-a .kawaii-button {
+		border: 1px solid #7d5f89;
+	}
+	body.purple .kawaii-a,
+	body.purple .kawaii-a .btns span,
+	body.purple .kawaii-a .kawaii-button {
+		box-shadow: 3px 3px 0 #654d6e;
+	}
+	body.purple .kawaii-a .btns span,
+	body.purple .kawaii-a .kawaii-button,
+	body.purple .kawaii-b .kawaii-button {
+		background: #faf4fb;
+	}
+	body.purple .kawaii-a .kawaii-header,
+	body.purple .kawaii-c .kawaii-header,
+	body.purple .kawaii-c .kawaii-button,
+	body.purple .kawaii-c::after,
+	body.purple .kawaii-c::before,
+	body.purple .kawaii-d .kawaii-header,
+	body.purple .kawaii-e .btns span  {
+		background: #c3a9cd;
+	}
+	body.purple .kawaii-a .kawaii-header {
+		border-bottom: 1px solid #7d5f89;
+	}
+	body.purple .kawaii-b .message,
+	body.purple .kawaii-b .kawaii-header,
+	body.purple .kawaii-b .kawaii-button {
+		border:  2px solid #a588b1;
+	}
+	body.purple .kawaii-b .message,
+	body.purple .kawaii-b .kawaii-header,
+	body.purple .kawaii-b .kawaii-button, 
+	body.purple .kawaii-b .window-title {
+		color: #a588b1;
+	}
+	body.purple .kawaii-b .message,
+	body.purple .kawaii-b .kawaii-header,
+	body.purple .kawaii-b .kawaii-button-box{ 
+		background: #e7c8f3;
+	}
+	body.purple .kawaii-c .kawaii-header,
+	body.purple .kawaii-c .message,
+	body.purple .kawaii-c .kawaii-button {
+	    border: 5px solid #c3a9cd;
+	}
+	body.purple .kawaii-c,
+	body.purple .kawaii-e,
+	body.purple .kawaii-e .kawaii-button {
+		color: #c3a9cd;
+	}
+	body.purple .kawaii-b .message,
+	body.purple .kawaii-c .message {
+		border-top: none;
+	}
+	body.purple .kawaii-e {
+		border: 1px solid #c3a9cd;
+	}
+	body.purple .kawaii-e .kawaii-button-box{
+		border-top: 1px solid #c3a9cd;
+	}
+
+/*purple*/
+
+
+/*sunset*/
+	body.sunset .kawaii-a,
+	body.sunset .kawaii-a .kawaii-button {
+		color: #d18d47;
+	}
+	body.sunset .kawaii-a,
+	body.sunset .kawaii-a .btns span,
+	body.sunset .kawaii-a .kawaii-button {
+		border: 1px solid #d18d47;
+	}
+	body.sunset .kawaii-a,
+	body.sunset .kawaii-a .btns span,
+	body.sunset .kawaii-a .kawaii-button {
+		box-shadow: 3px 3px 0 #99622a;
+	}
+	body.sunset .kawaii-a .btns span,
+	body.sunset .kawaii-a .kawaii-button,
+	body.sunset .kawaii-b .kawaii-button {
+		background: #fff6e5;
+	}
+	body.sunset .kawaii-a .kawaii-header,
+	body.sunset .kawaii-c .kawaii-header,
+	body.sunset .kawaii-c .kawaii-button,
+	body.sunset .kawaii-c::after,
+	body.sunset .kawaii-c::before,
+	body.sunset .kawaii-d .kawaii-header,
+	body.sunset .kawaii-e .btns span  {
+		background: #fdd17d;
+	}
+	body.sunset .kawaii-a .kawaii-header {
+		border-bottom: 1px solid #d18d47;
+	}
+	body.sunset .kawaii-b .message,
+	body.sunset .kawaii-b .kawaii-header,
+	body.sunset .kawaii-b .kawaii-button {
+		border:  2px solid #c3894f;
+	}
+	body.sunset .kawaii-b .message,
+	body.sunset .kawaii-b .kawaii-header,
+	body.sunset .kawaii-b .kawaii-button, 
+	body.sunset .kawaii-b .window-title {
+		color: #c3894f;
+	}
+	body.sunset .kawaii-b .message,
+	body.sunset .kawaii-b .kawaii-header,
+	body.sunset .kawaii-b .kawaii-button-box{ 
+		background: #ffdfa0;
+	}
+	body.sunset .kawaii-c .kawaii-header,
+	body.sunset .kawaii-c .message,
+	body.sunset .kawaii-c .kawaii-button {
+	    border: 5px solid #fdd17d;
+	}
+	body.sunset .kawaii-c,
+	body.sunset .kawaii-e,
+	body.sunset .kawaii-e .kawaii-button {
+		color: #fdd17d;
+	}
+	body.sunset .kawaii-b .message,
+	body.sunset .kawaii-c .message {
+		border-top: none;
+	}
+	body.sunset .kawaii-e {
+		border: 1px solid #fdd17d;
+	}
+	body.sunset .kawaii-e .kawaii-button-box{
+		border-top: 1px solid #fdd17d;
+	}
+/*sunset*/
+
+/*avocado*/
+	body.avocado .kawaii-a,
+	body.avocado .kawaii-a .kawaii-button {
+		color: #90a75b;
+	}
+	body.avocado .kawaii-a,
+	body.avocado .kawaii-a .btns span,
+	body.avocado .kawaii-a .kawaii-button {
+		border: 1px solid #90a75b;
+	}
+	body.avocado .kawaii-a,
+	body.avocado .kawaii-a .btns span,
+	body.avocado .kawaii-a .kawaii-button {
+		box-shadow: 3px 3px 0 #61703d;
+	}
+	body.avocado .kawaii-a .btns span,
+	body.avocado .kawaii-a .kawaii-button,
+	body.avocado .kawaii-b .kawaii-button {
+		background: #eafbb7;
+	}
+	body.avocado .kawaii-a .kawaii-header,
+	body.avocado .kawaii-c .kawaii-header,
+	body.avocado .kawaii-c .kawaii-button,
+	body.avocado .kawaii-c::after,
+	body.avocado .kawaii-c::before,
+	body.avocado .kawaii-d .kawaii-header,
+	body.avocado .kawaii-e .btns span  {
+		background: #c6eb6f;
+	}
+	body.avocado .kawaii-a .kawaii-header {
+		border-bottom: 1px solid #90a75b;
+	}
+	body.avocado .kawaii-b .message,
+	body.avocado .kawaii-b .kawaii-header,
+	body.avocado .kawaii-b .kawaii-button {
+		border:  2px solid #8a9f5c;
+	}
+	body.avocado .kawaii-b .message,
+	body.avocado .kawaii-b .kawaii-header,
+	body.avocado .kawaii-b .kawaii-button, 
+	body.avocado .kawaii-b .window-title {
+		color: #8a9f5c;
+	}
+	body.avocado .kawaii-b .message,
+	body.avocado .kawaii-b .kawaii-header,
+	body.avocado .kawaii-b .kawaii-button-box{ 
+		background: #d1f382;
+	}
+	body.avocado .kawaii-c .kawaii-header,
+	body.avocado .kawaii-c .message,
+	body.avocado .kawaii-c .kawaii-button {
+	    border: 5px solid #c6eb6f;
+	}
+	body.avocado .kawaii-c,
+	body.avocado .kawaii-e,
+	body.avocado .kawaii-e .kawaii-button {
+		color: #c6eb6f;
+	}
+	body.avocado .kawaii-b .message,
+	body.avocado .kawaii-c .message {
+		border-top: none;
+	}
+	body.avocado .kawaii-e {
+		border: 1px solid #c6eb6f;
+	}
+	body.avocado .kawaii-e .kawaii-button-box{
+		border-top: 1px solid #c6eb6f;
+	}
+/*avocado*/

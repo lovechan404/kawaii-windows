@@ -1,0 +1,84 @@
+body.avocado,
+body.avocado .menu span.active,
+body.avocado #preview-here,
+body.avocado #inputs input, 
+body.avocado #heading-input, 
+body.avocado #window-input,
+body.avocado .menu textarea,
+body.avocado .d-sample::-webkit-scrollbar-track,
+body.avocado textarea::-webkit-scrollbar-track{
+        background: #eafbb7;
+    }
+body.avocado,
+body.avocado a, 
+body.avocado .title,
+body.avocado .menu span, 
+body.avocado #generated-image a,
+body.avocado span.close,
+body.avocado .scrollbtn,
+body.avocado .modal-content,
+body.avocado .mini-menu-mobile a, 
+body.avocado #go-to-preview,
+body.avocado .mini-menu-desktop button,
+body.avocado .mini-menu-desktop button:hover, 
+body.avocado .mini-menu-desktop button:active,
+body.avocado #inputs input, 
+body.avocado #heading-input, 
+body.avocado #window-input,
+body.avocado .menu textarea {
+    color: #90a75b;
+}
+body.avocado .menu,
+body.avocado .a-line-a,
+body.avocado .menu-container,
+body.avocado .mini-menu-desktop button:hover, 
+body.avocado .mini-menu-desktop button:active {
+    background: #c6eb6f;
+}
+body.avocado .mini-menu-desktop button:hover, 
+body.avocado .mini-menu-desktop button:active,
+body.avocado #inputs input, 
+body.avocado #heading-input, 
+body.avocado #window-input,
+body.avocado .menu textarea,
+body.avocado #music-settings,
+body.avocado #music-controls ,
+body.avocado #share-settings,
+body.avocado #share-controls,
+body.avocado .menu span, 
+body.avocado #generated-image a{
+    border: 2px solid #90a75b;
+}
+body.avocado .menu span,
+body.avocado #generated-image a {
+    background: #b5db5a;
+}
+body.avocado .a-rooftop,
+body.avocado .a-building,
+body.avocado ::-webkit-scrollbar-thumb,
+body.avocado ::-webkit-scrollbar-thumb:hover,
+body.avocado .a-line1,
+body.avocado .a-line2,
+body.avocado #music-controls,
+body.avocado #share-controls{
+    background: #90a75b;
+}
+{
+    background-color: #9d652c;
+}
+body.avocado .title,
+body.avocado .modal-content,
+body.avocado span.close{
+    border: 5px solid #90a75b;
+}
+body.avocado . title {
+    box-shadow: 7px 7px 0 #00000025;
+}
+body.avocado .menu hr {
+    border-bottom: 3px dotted #90a75b;
+}
+@media (min-width: 768px) {
+    body.avocado .menu{
+        box-shadow: inset 2px 0px 11px 0 #90a75b;
+    }
+}

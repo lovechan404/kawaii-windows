@@ -1,0 +1,86 @@
+body.sky,
+body.sky .menu span.active,
+body.sky #preview-here,
+body.sky #inputs input, 
+body.sky #heading-input, 
+body.sky #window-input,
+body.sky .menu textarea,
+body.sky .d-sample::-webkit-scrollbar-track,
+body.sky textarea::-webkit-scrollbar-track{
+        background: #cae3ef;
+    }
+body.sky,
+body.sky a, 
+body.sky .title,
+body.sky .menu span, 
+body.sky #generated-image a,
+body.sky span.close,
+body.sky .scrollbtn,
+body.sky .modal-content,
+body.sky .mini-menu-mobile a, 
+body.sky #go-to-preview,
+body.sky .mini-menu-desktop button,
+body.sky .mini-menu-desktop button:hover, 
+body.sky .mini-menu-desktop button:active,
+body.sky #inputs input, 
+body.sky #heading-input, 
+body.sky #window-input,
+body.sky .menu textarea {
+    color: #668eab;
+}
+body.sky .menu,
+body.sky .a-line-a,
+body.sky .menu-container,
+body.sky .mini-menu-desktop button:hover, 
+body.sky .mini-menu-desktop button:active {
+    background: #9ecbe1;
+}
+body.sky .mini-menu-desktop button:hover, 
+body.sky .mini-menu-desktop button:active,
+body.sky #inputs input, 
+body.sky #heading-input, 
+body.sky #window-input,
+body.sky .menu textarea,
+body.sky #music-settings,
+body.sky #music-controls ,
+body.sky #share-settings,
+body.sky #share-controls,
+body.sky .menu span, 
+body.sky #generated-image a{
+    border: 2px solid #668eab;
+}
+body.sky .menu span,
+body.sky #generated-image a {
+    background: #8abfd9;
+}
+body.sky .a-rooftop,
+body.sky .a-building,
+body.sky ::-webkit-scrollbar-thumb,
+body.sky ::-webkit-scrollbar-thumb:hover,
+body.sky .a-line1,
+body.sky .a-line2,
+body.sky #music-controls,
+body.sky #share-controls{
+    background: #668eab;
+}
+{
+    background-color: #9d652c;
+}
+body.sky .title,
+body.sky .modal-content,
+body.sky span.close{
+    border: 5px solid #668eab;
+}
+body.sky . title {
+    box-shadow: 7px 7px 0 #00000025;
+}
+body.sky .menu hr {
+    border-bottom: 3px dotted #668eab;
+}
+@media (min-width: 768px) {
+    body.sky .menu{
+        box-shadow: inset 2px 0px 11px 0 #668eab;
+    }
+}
+
+

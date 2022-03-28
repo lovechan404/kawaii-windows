@@ -2,47 +2,38 @@
 
 $(document).ready(function() {
 
+    $(".title").click(function() {
+        $("#myModal2").show();
+    });
     $(".clear-input").click(function() {
         $(this).siblings('input').val('');
         $(this).siblings('textarea').val('');
         $(this).siblings('input').keyup();
         $(this).siblings('textarea').keyup();
     });
-    $("#kawaii-a").click(function() {
+    $("#style-setting span").click(function() {
         $(this).addClass('active');
         $(this).siblings('span').removeClass();
         $('.test > div > div').removeClass();
-        $(".test > div > div").addClass('kawaii-window kawaii-a');
-        $("#window-name").html("Soft");
+        var styleSetting = $(this).attr('id');
+        $(".test > div > div").addClass('kawaii-window ' + styleSetting);
+        if (styleSetting == "kawaii-e") {
+            $("#control-min-toggle").hide();
+        }
+        else {
+            $("#control-min-toggle").show();
+        }
     });
-    $("#kawaii-b").click(function() {
+    $(".color-settings span").hover(function() {
         $(this).addClass('active');
         $(this).siblings('span').removeClass();
-        $('.test > div > div').removeClass();
-        $(".test > div > div").addClass('kawaii-window kawaii-b');
-        $("#window-name").html("Cloudy");
     });
-    $("#kawaii-c").click(function() {
-        $(this).addClass('active');
-        $(this).siblings('span').removeClass();
-        $('.test > div > div').removeClass();
-        $(".test > div > div").addClass('kawaii-window kawaii-c');
-        $("#window-name").html("Cyberpunk");
+    $(".color-settings span").click(function() {
+        $('body').removeClass();
+        var colorSetting = $(this).attr('id');
+        $("body").addClass(colorSetting);
     });
-    $("#kawaii-d").click(function() {
-        $(this).addClass('active');
-        $(this).siblings('span').removeClass();
-        $('.test > div > div').removeClass();
-        $(".test > div > div").addClass('kawaii-window kawaii-d');
-        $("#window-name").html("Pink Grunge");
-    });
-    $("#kawaii-e").click(function() {
-        $(this).addClass('active');
-        $(this).siblings('span').removeClass();
-        $('.test > div > div').removeClass();
-        $(".test > div > div").addClass('kawaii-window kawaii-e');
-        $("#window-name").html("VIP");
-    });
+
     $("#control-min-toggle").click(function() {
         $(this).toggleClass("active not-active");
         $("#control-min").toggle();
@@ -60,6 +51,10 @@ $(document).ready(function() {
         $(this).toggleClass("active not-active");
         $("#report").slideToggle("slow");
         $("#donate").hide();
+    });
+    $("#click-toggle-menu").click(function() {
+        $("#click-toggle-menu i").toggleClass("fa-chevron-right fa-chevron-left");
+        $("#menu-container").toggle("slow");
     });
 
     $('#lights').click(function() {
@@ -122,8 +117,6 @@ $(document).ready(function() {
             name: "teamName[]",
             value: randBtn
         });
-
-
         var removeLink = $("<span/>", { class: "closeinput" }).html("X").click(function() {
             var index = $(this).index('.closeinput');
             $('.test .kawaii-button.button-added').eq(index).remove();
@@ -142,17 +135,17 @@ $(document).ready(function() {
         var btnVal = $(this).val();
         var index = $(this).index('input');
         // alert(index);
-        $('.test .kawaii-button').eq(index).html(btnVal);
+        $('.test .kawaii-button').eq(index).text(btnVal);
     });
     $("#inputs").on("keyup", "input", function() {
         var btnVal = $(this).val();
         var index = $(this).index('#inputs input');
         // alert(index);
-        $('.test .kawaii-button').eq(index).html(btnVal);
+        $('.test .kawaii-button').eq(index).text(btnVal);
     });
-    $("#window-input").on("keyup", function() { $('#window-title').html($(this).val()); });
-    $("#heading-input").on("keyup", function() { $('#heading').html($(this).val()); });
-    $("#msg-input").on("keyup", function() { $('.message-content').html($(this).val()); });
+    $("#window-input").on("keyup", function() { $('#window-title').text($(this).val()); });
+    $("#heading-input").on("keyup", function() { $('#heading').text($(this).val()); });
+    $("#msg-input").on("keyup", function() { $('.message-content').text($(this).val()); });
 
 
 
@@ -160,20 +153,20 @@ $(document).ready(function() {
 
 
 
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
-span.onclick = function() {
-    modal.style.display = "none";
-    document.getElementById("loader1").style.display = "block";
-    document.getElementById('generated-image').innerHTML = '';
-}
-window.onclick = function(event) {
-    if (event.target == modal) {
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() {
         modal.style.display = "none";
         document.getElementById("loader1").style.display = "block";
+        document.getElementById('generated-image').innerHTML = '';
     }
-}
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            document.getElementById("loader1").style.display = "block";
+        }
+    }
 
 var source = "StillAwakeLofiStudyMusic.mp3";
 var audio = new Audio();
@@ -199,11 +192,11 @@ $("#stopBtn").click(function() {
     $('#pauseBtn').hide();
 });
 
-$("#music-settings").click(function() {
+$("#music-option").hover(function() {
     $("#music-controls").slideToggle();
     $("#share-controls").slideUp();
 });
-$("#share-settings").click(function() {
+$("#share-option").hover(function() {
     $("#share-controls").slideToggle();
     $("#music-controls").slideUp();
 

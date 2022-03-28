@@ -1,0 +1,70 @@
+
+/*sky*/
+	body.sky .kawaii-a,
+	body.sky .kawaii-a .kawaii-button {
+		color: #90a75b;
+	}
+	body.sky .kawaii-a,
+	body.sky .kawaii-a .btns span,
+	body.sky .kawaii-a .kawaii-button {
+		border: 1px solid #90a75b;
+	}
+	body.sky .kawaii-a,
+	body.sky .kawaii-a .btns span,
+	body.sky .kawaii-a .kawaii-button {
+		box-shadow: 3px 3px 0 #61703d;
+	}
+	body.sky .kawaii-a .btns span,
+	body.sky .kawaii-a .kawaii-button,
+	body.sky .kawaii-b .kawaii-button {
+		background: #eafbb7;
+	}
+	body.sky .kawaii-a .kawaii-header,
+	body.sky .kawaii-c .kawaii-header,
+	body.sky .kawaii-c .kawaii-button,
+	body.sky .kawaii-c::after,
+	body.sky .kawaii-c::before,
+	body.sky .kawaii-d .kawaii-header,
+	body.sky .kawaii-e .btns span  {
+		background: #c6eb6f;
+	}
+	body.sky .kawaii-a .kawaii-header {
+		border-bottom: 1px solid #90a75b;
+	}
+	body.sky .kawaii-b .message,
+	body.sky .kawaii-b .kawaii-header,
+	body.sky .kawaii-b .kawaii-button {
+		border:  2px solid #8a9f5c;
+	}
+	body.sky .kawaii-b .message,
+	body.sky .kawaii-b .kawaii-header,
+	body.sky .kawaii-b .kawaii-button, 
+	body.sky .kawaii-b .window-title {
+		color: #8a9f5c;
+	}
+	body.sky .kawaii-b .message,
+	body.sky .kawaii-b .kawaii-header,
+	body.sky .kawaii-b .kawaii-button-box{ 
+		background: #d1f382;
+	}
+	body.sky .kawaii-c .kawaii-header,
+	body.sky .kawaii-c .message,
+	body.sky .kawaii-c .kawaii-button {
+	    border: 5px solid #c6eb6f;
+	}
+	body.sky .kawaii-c,
+	body.sky .kawaii-e,
+	body.sky .kawaii-e .kawaii-button {
+		color: #c6eb6f;
+	}
+	body.sky .kawaii-b .message,
+	body.sky .kawaii-c .message {
+		border-top: none;
+	}
+	body.sky .kawaii-e {
+		border: 1px solid #c6eb6f;
+	}
+	body.sky .kawaii-e .kawaii-button-box{
+		border-top: 1px solid #c6eb6f;
+	}
+/*sky*/

@@ -3,13 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <title> Kawaii Windows Generator by lovechan404 </title>
+    <title>Kawaii Popup Window Generator by lovechan404 </title>
     <meta name="description" content="Create cute windows and popups using the Kawaii Windows Generator for free. You can choose a design and edit the titles, messages and buttons. " />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/92a6ff382c.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="purple.css">
+    <link rel="stylesheet" type="text/css" href="sunset.css">
+    <link rel="stylesheet" type="text/css" href="avocado.css">
+    <link rel="stylesheet" type="text/css" href="sky.css">
     <link rel="stylesheet" type="text/css" href="kawaii-window.css">
+    <link rel="stylesheet" type="text/css" href="kawaii-window-set.css">
+    <link rel="stylesheet" type="text/css" href="kawaii-window2.css">
 
     <!-- If you get the error:
     	SecurityError: Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules 
@@ -27,10 +32,25 @@
 
 </head>
 
-<body>
-    <div class="display">
+<body class="pink">
+    <div class="display pink" id="display">
         <section class="box-container d-sample" id="preview">
+        	<div class="mini-menu-desktop">
+        		<div>
+        			<button id="click-toggle-menu" title="Toggle Menu"><i class="fas fa-chevron-right"></i></button>
+        		</div>
+        	</div>
+        	<div class="mini-menu-mobile">        			
+        		<a id="go-to-menu" href="#menu" title="Go to Menu"> Edit <br><i class="fas fa-chevron-down"></i></a>
+        	</div>
             <div class="div-scroll">
+            	<div class="color-settings">
+		        		<span id="pink" class="active"></span>
+		        		<span id="purple"></span>
+		        		<span id="sunset"></span>
+		        		<span id="avocado"></span>
+		        		<!-- <span id="sky"></span> -->
+		        	</div>
                 <div id="clouds">
                     <div class="cloud x2"></div>
                     <div class="cloud x3"></div>
@@ -40,32 +60,36 @@
                         <div></div>
                     </div>
                 </div>
-                <div id="clouds2">
+                <!-- <div id="clouds2">
                     <div class="cloud x1"></div>
                     <div class="cloud x4"></div>
-                </div>
+                </div> -->
                 <div class="title">
-                    <h1> Kawaii Windows Generator</h1>
-                    <h2 class="subtitle">by lovechan404 </h2>
+                    <h1> Kawaii Popup Window Generator</h1>
+                    <h2 class="subtitle"> for anything </h2>
                     <div class="a-line1"></div>
                     <div class="a-line2"></div>
-                    <div id="music-settings" title="Music Controls"><i class="fas fa-music"></i>
-                    </div>
-                    <div id="music-controls">
-                        <a><i class="fa fa-play" aria-hidden="true" id="playBtn"></i></a>
-                        <a><i class="fa fa-pause" aria-hidden="true" id="pauseBtn" style="display:none;"></i></a>
-                        <a><i class="fa fa-stop" aria-hidden="true" id="stopBtn"></i></a>
-                        <a href="https://soundcloud.com/ghostrifter-official" target="_blank"> <i class="fas fa-info-circle"></i></a>
-                    </div>
-                    <div id="share-settings" title="Export"><i class="fas fa-save"></i></div>
-                    <div id="share-controls">
-                        <a class="amazingbtn" id="amazingbtn"> <span>PNG</span> </a>
-                        <a id="amazingbtn2"><span>SVG</span></a>
-                    </div>
+                    <div id="music-option">
+	                    <div id="music-settings" title="Music Controls"><i class="fas fa-music"></i>
+	                    </div>
+	                    <div id="music-controls">
+	                        <a><i class="fa fa-play" aria-hidden="true" id="playBtn"></i></a>
+	                        <a><i class="fa fa-pause" aria-hidden="true" id="pauseBtn" style="display:none;"></i></a>
+	                        <a><i class="fa fa-stop" aria-hidden="true" id="stopBtn"></i></a>
+	                        <a href="https://soundcloud.com/ghostrifter-official" target="_blank"> <i class="fas fa-info-circle"></i></a>
+	                    </div>
+	                </div>
+	                <div id="share-option">
+	                    <div id="share-settings" title="Export"><i class="fas fa-save"></i></div>
+	                    <div id="share-controls">
+	                        <a class="amazingbtn" id="amazingbtn"> <span>PNG</span> </a>
+	                        <a id="amazingbtn2"><span>SVG</span></a>
+	                    </div>
+	                </div>
                 </div>
                 <div class="test lights-off">
                     <div id="kawaii-window-save" style="padding:10px">
-                        <div class="kawaii-window kawaii-a">
+                        <div class="kawaii-window kawaii-a" id="kawaii-window">
                             <div class="kawaii-header">
                                 <div id="window-title" class="window-title"> Warning ⚠ </div>
                                 <div class="btns" style="min-width: fit-content;">
@@ -83,62 +107,232 @@
                         </div>
                     </div>
                 </div>
-                <br><br><br>
-                <div class="a-container">
-                    <div class="a-rooftop"></div>
-                    <div class="a-building">
-                        <div class="a-line-a"></div>
-                        <div class="a-windows">
-                            <div class="a-ss">
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div class="a-s">
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div class="a-aircon"></div>
-                            <div class="a-ss">
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div class="a-ssss">
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div class="a-aircon"></div>
-                            <div class="a-s">
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div class="a-sss">
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div class="a-aircon"></div>
-                            <div class="a-ssss">
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div class="a-ss">
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div class="a-aircon"></div>
-                        </div>
-                    </div>
+                <br><br><br><br><br><br>
+                
+                <div class="a-container"> 
+                		<div>
+	                    <div class="a-rooftop"></div>
+	                    <div class="a-building">
+	                        <div class="a-line-a"></div>
+	                        <div class="a-windows">
+	                            <div class="a-ss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-s">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                            <div class="a-ss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-ssss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                            <div class="a-s">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-sss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                            <div class="a-ssss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-ss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                             <div class="a-ss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-s">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                            <div class="a-ssss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-ss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                            <div class="a-ss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-ssss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                            <div class="a-s">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-sss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                            <div class="a-ssss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-ss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                            <div class="a-s">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-sss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                             <div class="a-ss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-s">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                            <div class="a-ss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                            <div class="a-ss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-ssss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                            <div class="a-s">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-sss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                            <div class="a-ssss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-ss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                            <div class="a-ss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-ssss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                            <div class="a-s">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-sss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                            <div class="a-ssss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-ss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                            <div class="a-ssss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-ss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                            <div class="a-ssss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-ss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-ssss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                            <div class="a-s">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-sss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+	                            <div class="a-ssss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-ss">
+	                                <div></div>
+	                                <div></div>
+	                            </div>
+	                            <div class="a-aircon"></div>
+
+	                        </div>
+	                    </div>
+	                  </div>
+                    <div class="a-billboard"></div>
+
                 </div>
             </div>
         </section>
-        <section class="box-container menu-container">
-            <div class="menu" id="menu">
-                <br><br> Choose your style: <br><br>
-                <div style="display:inline-block;">
+        <section class="box-container menu-container" id="menu-container">
+            <div class="menu" id="menu">      
+            			<a id="go-to-preview" href="#preview" title="Go to Menu"><i class="fas fa-chevron-up"> </i><br> Preview <br><br></a>
+                <!-- <br><br> Choose your style: -->
+                 <br>
+                <div style="display:inline-block;" id="style-setting">
                     <span id="kawaii-a" class="active">a</span>
                     <span id="kawaii-b">b</span>
                     <span id="kawaii-c">c</span>
-                    <!-- <span id="kawaii-d">d</span> -->
-                    <!-- <span id="kawaii-e">e</span> -->
+                    <span id="kawaii-d">d</span>
+                    <span id="kawaii-e">e</span>
                 </div>
                 <hr>
                 Window Title <br><br>
@@ -181,7 +375,6 @@
                 <br><br>
                 You can help my studies by donating through: <br>
                 GCASH: 09269515031 <br>
-                Ko-Fi:<a target="blank" href="https://ko-fi.com/lovechan"> lovechan </a>
                 <hr>
                 License:
                 <br>
@@ -217,7 +410,6 @@
                     <div id="donate" style="display:none;">
                         Hi! I'm an IT student. You can help my studies by donating through: <br>
                         GCASH: 09269515031 <br>
-                        Ko-Fi:<a target="_blank" href="https://ko-fi.com/lovechan"> lovechan </a>
                     </div>
                     <div id="report" style="display:none;">
                         You can help me improve Kawaii Windows by reporting bugs, requesting features, asking questions and more through: <br>
