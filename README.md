@@ -1,7 +1,7 @@
 # Kawaii Windows Generator
 Create cute window and popup images using the Kawaii Windows Generator for free. You can choose a design and edit the titles, messages, and buttons.
 
-Check it here: https://lovechan404.itch.io/kawaii-windows
+Check it here: https://lvch4n.com/kawaii-popup-window-generator/
 
 More colors and tyles coming soon.
 
