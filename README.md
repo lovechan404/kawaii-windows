@@ -1,7 +1,7 @@
-# Kawaii Windows Generator Project (v1)
+# Kawaii Windows Generator Project (v0.1)
 Create cute window and popup images using the Kawaii Windows Generator for free. You can choose a design and edit the titles, messages, and buttons.
 
-Final version here: https://tools.lvch4n.com/kawaii-popup-window-generator.php
+This is the source code of the initial version of Kawaii Windows Popup Generator. For the latest version, please go to https://tools.lvch4n.com/kawaii-popup-window-generator.
 
 
 # Screenshot
@@ -12,7 +12,7 @@ Final version here: https://tools.lvch4n.com/kawaii-popup-window-generator.php
 ![image](https://user-images.githubusercontent.com/69886523/143730777-0bdeb55c-c2f1-43d0-90db-3877d4174525.png)
 
 # License
-Kawaii Windows Generator Project (v1) is licensed under GNU General Public License v2.0. 
+Kawaii Windows Generator Project (v0.1) is licensed under GNU General Public License v2.0. 
 
 You are permitted to:
 - Use the materials for commercial purposes
